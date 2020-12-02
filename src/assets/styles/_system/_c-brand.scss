@@ -10,15 +10,18 @@
    ========================================================================== */
 
 .c-brand {
-  @include font-size($h3,.9);
+  @include font-size($h4,1);
+  font-family: $font-secondary;
   font-weight: 600;
+  letter-spacing: .05rem;
   color: var(--theme);
   display: flex;
-  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
   margin-right: $unit-large;
 
   @include mq(medium) {
-    @include font-size($h2,.8);
+    @include font-size($h3,1);
   }
 }
 
@@ -31,46 +34,27 @@
   }
 }
 
+.c-brand__wordmark {
+  display: flex;
+  flex-direction: column;
+}
+
 .c-brand__top {
-  @include font-size(2rem,.9);
-  text-transform: uppercase;
-  letter-spacing: .05rem;
-  border-bottom: .2rem solid transparent;
 
-  .c-brand--link:hover &,
-  .c-brand--link:focus & {
-    border-bottom: .2rem solid var(--brand);
-  }
-
-  @include mq(medium) {
-    @include font-size(2.6rem,.9);
-  }
 }
 
 .c-brand__bottom {
-  @include font-size(2.6rem,.8);
-  font-weight: 400;
-  letter-spacing: -.05rem;
-  text-transform: none;
-  padding-top: 1.2rem;
-  padding-bottom: $unit-tiny;
-  border-bottom: .2rem solid transparent;
 
-  .c-brand--link:hover &,
-  .c-brand--link:focus & {
-    border-bottom: .2rem solid var(--brand);
-  }
-
-  @include mq(medium) {
-    padding-top: 1.8rem;
-    @include font-size(3.4rem,.8);
-  }
 }
 
-.c-brand__divider {
-  align-self: stretch;
-  transform: rotate(16deg);
-  margin-left: $unit-small - $unit-tiny/2;
-  margin-right: $unit-small - $unit-tiny;
-  border-left: .25rem solid var(--brand);
+.c-brand__icon {
+  width: $unit * 2.5;
+  height: $unit * 2.5;
+  margin-right: $unit-small;
+
+  svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+  }
 }

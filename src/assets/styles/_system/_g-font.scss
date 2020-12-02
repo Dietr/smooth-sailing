@@ -4,6 +4,13 @@
 
 @font-face {
   font-family: "Soehne";
+  font-weight: 300;
+  src: url("/assets/fonts/soehne-test-leight.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Soehne";
   font-weight: 400;
   src: url("/assets/fonts/soehne-test-buch.woff") format("woff");
   font-display: fallback;
@@ -20,5 +27,14 @@
   font-family: "Soehne";
   font-weight: 600;
   src: url("/assets/fonts/soehne-test-kraftig.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Adieu";
+  font-weight: 600;
+  src: url("/assets/fonts/adieu-black.woff2") format("woff2"),
+       url("/assets/fonts/adieu-black.woff") format("woff"),
+       url("/assets/fonts/adieu-black.eot") format("eot");
   font-display: fallback;
 }

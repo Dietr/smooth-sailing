@@ -26,6 +26,8 @@
 .c-intro {
   @include font-size($h2);
   color: var(--theme);
+  font-weight: 300;
+  // font-family: $font-secondary;
 
   em {
     font-style: italic;
