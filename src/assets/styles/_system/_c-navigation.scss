@@ -1,0 +1,122 @@
+/* ==================================
+   #NAVIGATION
+   ================================== */
+
+.c-navigation-toggle {
+  @include font-size($base);
+  font-family: $font-family;
+  border: 0;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  position: absolute;
+  z-index: $z-index-gamma;
+  top: $unit + $unit-small*1.5;
+  right: $unit-medium - $unit-small;
+  color: var(--theme-background);
+  background-color: var(--link);
+  border-radius: $unit-medium;
+  display: block;
+  padding: 0 $unit $unit-tiny;
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: var(--link-hover);
+  }
+
+  @include mq(navigation) {
+    display: none;
+  }
+}
+
+.c-navigation-holder {
+  @include mq($until: navigation) {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-light);
+
+    &.is-visible {
+      right: 0;
+    }
+  }
+}
+
+.c-navigation {
+  display: flex;
+  align-items: center;
+
+  @include mq($until: navigation) {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+}
+
+.c-navigation__item {
+  @include mq($until: navigation) {
+    & + & {
+      margin-top: $unit-medium + $unit;
+    }
+  }
+
+  @include mq(navigation) {
+    & + & {
+      margin-left: $unit-medium + $unit - $unit-small * 2;
+    }
+  }
+
+  @include mq(large) {
+    & + & {
+      margin-left: $unit-large + $unit - $unit-small * 2;
+    }
+  }
+}
+
+.c-navigation__link {
+  @include font-size($h5);
+  display: block;
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: .1em;
+  transition: color $transition;
+  padding-bottom: $unit-tiny;
+  padding-left: $unit-small;
+  padding-right: $unit-small;
+
+  &:hover,
+  &:focus {
+    color: var(--link-active);
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+
+  }
+
+  &:focus {
+    outline-offset: .4rem;
+    outline: .2rem dashed var(--outline);
+  }
+
+  .is-active > & {
+    color: var(--link-active);
+    background-color: var(--theme-xlight);
+    border-radius: $radius;
+  }
+
+  @include mq($until: navigation) {
+    @include font-size($h2);
+  }
+
+  @include mq(navigation) {
+    padding-top: $unit-tiny/2;
+    padding-bottom: $unit-tiny + $unit-tiny/2;
+  }
+
+  @include mq(medium) {
+    @include font-size($h4);
+    padding-top: 0;
+    padding-bottom: $unit-tiny;
+  }
+}

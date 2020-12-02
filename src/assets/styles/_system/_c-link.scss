@@ -1,0 +1,33 @@
+/* ==================================
+   #LINK
+   ================================== */
+
+.c-link {
+  display: inline-flex;
+  align-items: center;
+  transition: color $transition;
+  text-underline-offset: .1em;
+  text-decoration-thickness: .2rem;
+
+  > .c-icon {
+    margin-right: $unit;
+    margin-left: $unit;
+    bottom: -.1ex;
+  }
+
+  &,
+  &:visited {
+    color: var(--link);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover);
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline-offset: .2rem;
+    outline: .2rem dashed var(--outline);
+  }
+}

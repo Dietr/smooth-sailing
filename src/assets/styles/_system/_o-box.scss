@@ -1,0 +1,60 @@
+/* ==========================================================================
+   #BOX
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$box-unit       : $unit !default;
+$box-unit-tiny  : $unit-tiny !default;
+$box-unit-small : $unit-small !default;
+$box-unit-large : $unit-large !default;
+$box-unit-huge  : $unit-huge !default;
+
+
+/* Default/mandatory classes.
+   ========================================================================== */
+
+/**
+ * The box object simply boxes off content. Extend with cosmetic styles in the
+ * Components layer.
+ *
+ * 1. So we can apply the `.o-box` class to naturally-inline elements.
+ */
+
+.o-box {
+  display: block; /* [1] */
+  padding: $box-unit;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Size variants
+   ========================================================================== */
+
+.o-box--flush {
+  padding: 0;
+}
+
+.o-box--tiny {
+  padding: $box-unit-tiny;
+}
+
+.o-box--small {
+  padding: $box-unit-small;
+}
+
+.o-box--large {
+  padding: $box-unit-large - $box-unit;
+
+  @include mq(medium) {
+    padding: $box-unit-large;
+  }
+}
+
+.o-box--huge {
+  padding: $box-unit-huge;
+}

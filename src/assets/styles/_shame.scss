@@ -1,0 +1,106 @@
+/* ==================================
+   #SHAME
+   A place to write quick fixes and temporary hacks.
+   ================================== */
+
+.c-tint-one {
+  background-color: $gray-200;
+  height: $unit-huge;
+  text-align: center;
+}
+
+.c-tint-two {
+  background-color: $gray-300;
+  height: $unit-huge;
+  text-align: center;
+}
+
+.c-tint-three {
+  background-color: $gray-400;
+  height: $unit-huge;
+  text-align: center;
+}
+
+.c-tint-four {
+  background-color: $gray-500;
+  height: $unit-huge;
+  text-align: center;
+}
+
+.c-tint-five {
+  background-color: $gray-600;
+  height: $unit-huge;
+  text-align: center;
+}
+
+.c-tint-six {
+  background-color: $gray-700;
+  height: $unit-huge;
+  text-align: center;
+}
+
+.c-tint-seven {
+  background-color: $gray-800;
+  height: $unit-huge;
+  text-align: center;
+}
+
+
+
+.c-offset-right-top {
+  @include mq(medium) {
+    margin-top: -$unit-large;
+
+    .c-image {
+      margin-left: -$unit-huge;
+      width: calc(100% + #{$unit-huge});
+      max-width: calc(100% + #{$unit-huge});
+    }
+  }
+
+  @include mq(large) {
+    margin-top: -$unit-huge;
+
+    .c-image {
+      margin-left: -$unit-huge*2;
+      width: calc(100% + #{$unit-huge*2});
+      max-width: calc(100% + #{$unit-huge*2});
+    }
+  }
+}
+
+.c-offset-left {
+  margin-top: $unit-large;
+
+  @include mq(medium) {
+    margin-top: -$unit-huge*2;
+
+    .c-image {
+      margin-left: -$unit-huge;
+      width: calc(100% + #{$unit-huge});
+      max-width: calc(100% + #{$unit-huge});
+    }
+  }
+
+  @include mq(large) {
+    margin-top: -$unit-huge;
+
+    .c-image {
+      width: calc(100% + #{$unit-huge*2});
+      max-width: calc(100% + #{$unit-huge*2});
+    }
+  }
+}
+
+.c-offset-right {
+  margin-top: $unit-large;
+
+  @include mq(medium) {
+    margin-top: $unit-huge;
+
+    .c-image {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

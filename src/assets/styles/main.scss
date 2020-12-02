@@ -1,0 +1,85 @@
+/* ==================================
+   #THIS IS NOT A SYSTEM
+   ================================== */
+
+/**
+ * A design system boilerplate
+ */
+
+/**
+ * CONTENTS
+ * ---
+ * TOKENS: load the design tokens
+ * MIXINS: Helper functions
+ * SETTINGS: Project settings and variables
+ * GENERIC: Reset, global box-sizing and font-styles
+ * ELEMENTS: Plain html tag styling
+ * OBJECTS: OOCSS unstyled objects (namespace: '.o-...')
+ * COMPONENTS: Components (namespace: '.ac-...')
+ * UTILITIES: Single function helper classes (namespace: '.u-...')
+ */
+
+// DESIGN TOKENS (AUTO-GENERATED)
+@import "_tokens/colors";
+@import "_tokens/font-sizes";
+@import "_tokens/spacing";
+
+
+// MIXINS
+@import "_system/m-font-size";
+@import "_system/m-sass-mq";
+@import "_system/m-color-mix";
+@import "_system/m-dark-mode";
+
+
+// SETTINGS
+@import "_system/s-global";
+@import "_system/s-root";
+
+
+// GENERIC
+@import "_system/g-reset";
+@import "_system/g-box-sizing";
+@import "_system/g-font";
+
+
+// ELEMENTS
+@import "_system/e-page";
+
+
+// OBJECTS
+@import "_system/o-box";
+@import "_system/o-layout";
+@import "_system/o-flex";
+@import "_system/o-grid";
+@import "_system/o-row";
+@import "_system/o-wrapper";
+@import "_system/o-flow";
+
+
+// COMPONENTS
+@import "_system/c-brand";
+@import "_system/c-icon";
+@import "_system/c-navigation";
+@import "_system/c-header";
+@import "_system/c-footer";
+@import "_system/c-user-toggle";
+@import "_system/c-skiplink";
+@import "_system/c-link";
+@import "_system/c-typography";
+@import "_system/c-rich-text";
+@import "_system/c-image";
+@import "_system/c-card";
+
+
+// UTILITIES
+@import "_system/u-align-text";
+@import "_system/u-focus";
+@import "_system/u-widths";
+@import "_system/u-spacings";
+@import "_system/u-print";
+@import "_system/u-hide";
+
+
+// SHAME
+@import "shame";

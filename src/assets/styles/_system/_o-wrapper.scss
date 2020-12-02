@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #WRAPPER
+   ---
+   NOTICE: Adapted from https://github.com/inuitcss/inuitcss/blob/develop/objects/_objects.wrapper.scss
+   ========================================================================== */
+
+/* Variables
+  ========================================================================== */
+
+$wrapper-width      : 900px !default;
+$wrapper-width-small: 600px !default;
+$wrapper-width-large: 1200px !default;
+$wrapper-breakpoint : 1023px !default;
+$wrapper-unit       : 1rem !default;
+$wrapper-unit-large : 2rem !default;
+
+
+/* Default classes.
+  ========================================================================== */
+
+.o-wrapper {
+  padding-right: $wrapper-unit;
+  padding-left: $wrapper-unit;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $wrapper-width;
+
+  @include mq($wrapper-breakpoint) {
+    padding-right: $wrapper-unit-large;
+    padding-left: $wrapper-unit-large;
+  }
+}
+
+
+/* Size variants.
+    ========================================================================== */
+
+.o-wrapper--small {
+  max-width: $wrapper-width-small;
+}
+
+.o-wrapper--large {
+  max-width: $wrapper-width-large;
+}

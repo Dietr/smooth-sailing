@@ -1,0 +1,92 @@
+/* ==================================
+   #RICH TEXT
+   ================================== */
+
+.c-rich-text {
+  color: var(--theme);
+
+  > *,
+  ul {
+    @include font-size($h5);
+  }
+
+  a {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    display: inline-flex;
+    transition: color $transition;
+    text-underline-offset: .1em;
+    text-decoration-thickness: .2rem;
+
+    &,
+    &:visited {
+      color: var(--link);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--link-hover);
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline-offset: .2rem;
+      outline: .2rem dashed var(--outline);
+    }
+  }
+
+  li + li {
+    margin-top: $unit-small;
+  }
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    @include font-size($h4);
+    font-weight: 600;
+  }
+
+  > * + * {
+    margin-top: $unit-medium;
+  }
+
+  > h2 + * {
+    margin-top: $unit-tiny;
+  }
+
+  @include mq(medium) {
+    > *,
+    ul {
+      @include font-size($h4);
+    }
+
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      @include font-size($h3);
+      font-weight: 600;
+    }
+  }
+}
+
+
+.c-rich-text--short {
+  > *,
+  ul {
+    max-width: 55ch;
+  }
+
+  @include mq(medium) {
+    > *,
+    ul {
+      max-width: 40ch;
+    }
+  }
+}

@@ -1,0 +1,171 @@
+/* ==========================================================================
+   #LAYOUT OBJECT
+   https://ethanmarcotte.com/wrote/css-grid-without-max-width/
+   ========================================================================== */
+
+$layout-width: 80rem;
+
+
+.o-layout {
+  display: grid;
+  min-height: 100%;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-template-columns:
+    [full-start] $unit + $unit-small
+    [padding-start] calc( 50vw - #{$layout-width} )
+    [one] repeat( 1, 1fr )
+    [two] repeat( 1, 1fr )
+    [three] repeat( 1, 1fr )
+    [four] repeat( 1, 1fr )
+    [five] repeat( 1, 1fr )
+    [six] repeat( 1, 1fr )
+    [seven] repeat( 1, 1fr )
+    [eight] repeat( 1, 1fr )
+    [nine] repeat( 1, 1fr )
+    [ten] repeat( 1, 1fr )
+    [eleven] repeat( 1, 1fr )
+    [twelve] repeat( 1, 1fr )
+    [thirteen] $unit + $unit-small
+    [padding-end] calc( 50vw - #{$layout-width} )
+    [full-end];
+
+  @include mq(medium) {
+    grid-template-columns:
+      [full-start] $unit-medium
+      [padding-start] calc( 50vw - #{$layout-width} )
+      [one] repeat( 1, 1fr )
+      [two] repeat( 1, 1fr )
+      [three] repeat( 1, 1fr )
+      [four] repeat( 1, 1fr )
+      [five] repeat( 1, 1fr )
+      [six] repeat( 1, 1fr )
+      [seven] repeat( 1, 1fr )
+      [eight] repeat( 1, 1fr )
+      [nine] repeat( 1, 1fr )
+      [ten] repeat( 1, 1fr )
+      [eleven] repeat( 1, 1fr )
+      [twelve] repeat( 1, 1fr )
+      [thirteen] $unit-medium
+      [padding-end] calc( 50vw - #{$layout-width} )
+      [full-end];
+  }
+
+  @include mq(large) {
+    grid-template-columns:
+      [full-start] $unit-large
+      [padding-start] calc( 50vw - #{$layout-width} )
+      [one] repeat( 1, 1fr )
+      [two] repeat( 1, 1fr )
+      [three] repeat( 1, 1fr )
+      [four] repeat( 1, 1fr )
+      [five] repeat( 1, 1fr )
+      [six] repeat( 1, 1fr )
+      [seven] repeat( 1, 1fr )
+      [eight] repeat( 1, 1fr )
+      [nine] repeat( 1, 1fr )
+      [ten] repeat( 1, 1fr )
+      [eleven] repeat( 1, 1fr )
+      [twelve] repeat( 1, 1fr )
+      [thirteen] $unit-large
+      [padding-end] calc( 50vw - #{$layout-width} )
+      [full-end];
+  }
+}
+
+.o-layout__full {
+  grid-column: full-start / full-end;
+}
+
+.o-layout__container {
+  grid-column: one / thirteen;
+
+  @include mq(medium) {
+    grid-column: one / thirteen;
+  }
+}
+
+.o-layout__left {
+  grid-column: one / twelve;
+
+  @include mq(medium) {
+    grid-column: one / seven;
+  }
+}
+
+.o-layout__center {
+  grid-column: one / twelve;
+
+  @include mq(medium) {
+    grid-column: four / ten;
+  }
+}
+
+
+.o-layout__right {
+  grid-column: two / thirteen;
+
+  @include mq(medium) {
+    grid-column: seven / thirteen;
+  }
+}
+
+.o-layout__aside-left {
+  grid-column: one / twelve;
+
+  @include mq(medium) {
+    grid-column: one / seven;
+  }
+
+  @include mq(large) {
+    grid-column: one / five;
+  }
+}
+
+.o-layout__aside-right {
+  grid-column: two / thirteen;
+
+  @include mq(medium) {
+    grid-column: seven / thirteen;
+  }
+
+  @include mq(large) {
+    grid-column: nine / thirteen;
+  }
+}
+
+.o-layout__content {
+  grid-column: one / thirteen;
+
+  @include mq(medium) {
+    grid-column: two / twelve;
+  }
+
+  @include mq(large) {
+    grid-column: three / eleven;
+  }
+}
+
+.o-layout__content-left {
+  grid-column: one / thirteen;
+
+  @include mq(medium) {
+    grid-column: one / eleven;
+  }
+
+  @include mq(large) {
+    grid-column: one / nine;
+  }
+}
+
+.o-layout__content-right {
+  grid-column: one / thirteen;
+
+  @include mq(medium) {
+    grid-column: three / thirteen;
+  }
+
+  @include mq(large) {
+    grid-column: five / thirteen;
+  }
+}

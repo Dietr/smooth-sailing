@@ -1,0 +1,125 @@
+/* ==================================
+   #USER TOGGLE
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+
+/* Component
+   ========================================================================== */
+
+.c-user-toggle {
+  position: relative;
+  margin-left: $unit-medium;
+
+  @include mq($until: navigation) {
+    position: absolute;
+    top: $unit + $unit-small;
+    right: $unit-large + $unit-large - $unit-small;
+
+    .has-nav & {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  @include mq(navigation) {
+    margin-left: $unit-large;
+  }
+
+  @include mq(large) {
+    margin-left: $unit-huge;
+  }
+}
+
+.c-user-toggle__btn {
+  border: 0;
+  outline: 0;
+  color: var(--link);
+  display: flex;
+  padding: .2rem;
+  transition: color $transition;
+
+  &:focus,
+  &:hover {
+    color: var(--link-hover);
+  }
+
+  &:focus {
+    outline: .2rem dashed var(--outline);
+  }
+
+  .c-icon {
+    bottom: 0;
+    width: $unit-medium + $unit-tiny;
+    height: $unit-medium + $unit-tiny;
+    padding: $unit-tiny/2;
+  }
+
+  @include mq(medium) {
+    .c-icon {
+      width: $unit-medium + $unit-tiny*1.5;
+      height: $unit-medium + $unit-tiny*1.5;
+      padding: $unit-tiny/2;
+    }
+  }
+}
+
+  .c-user-toggle__dark {
+    display: none;
+
+    [data-user-color-scheme='dark'] & {
+      display: block;
+    }
+  }
+
+  .c-user-toggle__light {
+    display: none;
+
+    [data-user-color-scheme='light'] & {
+      display: block;
+    }
+  }
+
+  .c-user-toggle__text {
+    @include font-size($small,1.1);
+    font-family: $font-family;
+    position: absolute;
+    width: auto;
+    top: 100%;
+    right: 50%;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity $transition;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 100%;
+      height: 150%;
+      width: 100%;
+    }
+
+    .c-user-toggle__btn:hover &,
+    .c-user-toggle__btn:focus &,
+    .has-nav & {
+      opacity: 1;
+    }
+
+    @include mq($until: navigation) {
+      .has-nav & {
+        top: 50%;
+        right: auto;
+        left: calc(100% + #{$unit-tiny});
+        transform: translateY(-60%);
+        white-space: nowrap;
+      }
+    }
+
+
+    @include mq(large) {
+      white-space: nowrap;
+    }
+  }

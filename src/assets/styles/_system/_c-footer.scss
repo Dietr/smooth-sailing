@@ -1,0 +1,20 @@
+/* ==================================
+   #CARD
+   ================================== */
+
+.c-footer {
+
+}
+
+.c-footer__main {
+}
+
+.c-footer__aside {
+  align-self: end;
+  padding-bottom: $unit-tiny;
+  padding-left: $unit-large;
+
+  @include mq($until: medium) {
+    padding-top: $unit-large;
+  }
+}

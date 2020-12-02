@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+
+@font-face {
+  font-family: "Soehne";
+  font-weight: 400;
+  src: url("/assets/fonts/soehne-test-buch.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Soehne";
+  font-weight: 500;
+  src: url("/assets/fonts/soehne-test-halbfett.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Soehne";
+  font-weight: 600;
+  src: url("/assets/fonts/soehne-test-kraftig.woff") format("woff");
+  font-display: fallback;
+}

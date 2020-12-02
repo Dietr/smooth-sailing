@@ -1,0 +1,46 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$font-family              : "Soehne", sans-serif !default;
+$font-weight              : 400 !default;
+$page-bg                  : var(--theme-background) !default;
+$page-font-size           : 1.8rem !default;
+$page-line-height         : 1.5 !default;
+
+
+/* Elements
+   ========================================================================== */
+
+html {
+  font-family: $font-family;
+  font-size: 62.5%;
+  font-weight: $font-weight;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  background-color: $page-bg;
+
+  @include mq($until: navigation) {
+    &.has-nav {
+      overflow: hidden;
+    }
+  }
+}
+
+body {
+  height: 100%;
+  font-size: $page-font-size; /* [4] */
+  line-height: $page-line-height; /* [1] */
+}
+
+::-moz-selection {
+  background-color: var(--selection);
+}
+
+::selection {
+  background-color: var(--selection);
+}

@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #SETUP ROOT VARIABLES
+   ========================================================================== */
+
+// Primary
+:root {
+  --color-mode: 'light';
+  --brand: #{$gray-900};
+  --theme: #{$gray-900};
+  --theme-light: #{$gray-300};
+  --theme-xlight: #{$gray-200};
+  --theme-xxlight: #{$gray-100};
+  --theme-tint: #{$gray-400};
+  --theme-tint-light: #{$gray-300};
+  --theme-background: #{$gray-100};
+  --theme-border: #{$white};
+  --theme-card: #{$white};
+  --link: #{$gray-700};
+  --link-hover: #{$gray-600};
+
+  --link-active: #{$gray-900};
+  --selection: #{$gray-200};
+  --outline: #{$gray-400};
+}
+
+// Primary dark
+@include dark-mode() {
+  --brand: #{$gray-100};
+  --theme: #{$gray-100};
+  --theme-light: #{$gray-800};
+  --theme-xlight: #{$gray-800};
+  --theme-xxlight: #{$gray-800};
+  --theme-tint: #{$gray-300};
+  --theme-tint-light: #{$gray-300};
+  --theme-background: #{$gray-900};
+  --theme-border: #{$gray-800};
+  --theme-card: #{$gray-1000};
+  --link: #{$gray-400};
+  --link-hover: #{$gray-500};
+  --link-active: #{$gray-200};
+  --selection: #{$gray-800};
+  --outline: #{$gray-600};
+}

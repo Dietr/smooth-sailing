@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #TEXT ALIGNMENT
+   ========================================================================== */
+
+/**
+ * Utility classes to align text. Use text alignment like this:
+ *
+ *   <p class="u-text-right">
+ *      text
+ *   </p>
+ *
+ *   <div class="u-text-right">
+ *      <button class="c-button">
+ *        Button
+ *      </button>
+ *   </div>
+ */
+
+/* Classes
+  ========================================================================== */
+
+.u-align-right {
+  text-align: right;
+}
+
+.u-align-center {
+  text-align: center;
+}
+
+.u-align-left {
+  text-align: left;
+}

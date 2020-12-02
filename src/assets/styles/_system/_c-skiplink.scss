@@ -1,0 +1,53 @@
+/* ==================================
+   #SKIPLINK
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+
+/* Component
+   ========================================================================== */
+
+.c-skiplink {
+  @include font-size($small,1);
+  padding: $unit-tiny/2 $unit-tiny $unit-tiny;
+  background-color: var(--theme-primary-background);
+  position: absolute;
+  white-space: nowrap;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  display: block;
+  text-decoration: none;
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus {
+    color: var(--theme);
+  }
+
+  &:focus {
+    width: auto;
+    height: auto;
+    top: $unit-large + $unit + $unit;
+    left: $unit + $unit;
+    outline-offset: .2rem;
+    outline: .2rem dashed var(--outline);
+  }
+
+  @include mq(medium) {
+    &:focus {
+      top: $unit-large + $unit-large;
+    }
+  }
+
+  @include mq(large) {
+    &:focus {
+      top: $unit;
+      left: $unit;
+    }
+  }
+}

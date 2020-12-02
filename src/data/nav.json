@@ -1,0 +1,12 @@
+{
+  "main": [
+    {
+      "title": "Articles",
+      "url": "/articles/"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact/"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+$outline: 2px solid $gray-500;
+
+$mq-breakpoints: (
+  small: 600px,
+  medium: 950px,
+  large: 1280px,
+  huge: 1500px,
+  xhuge: 1550px,
+  navigation: 850px
+);
+
+// Transitions
+$duration: (1/4) + s;
+$easing: cubic-bezier(0.190,  1.000, 0.220, 1.000);
+$transition: $duration $easing;
+
+// Radius
+$radius: $unit;
+
+
+// Z-indexes
+$z-index-alpha: 1;
+$z-index-beta: 2;
+$z-index-gamma: 3;
