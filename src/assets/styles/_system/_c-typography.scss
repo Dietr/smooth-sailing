@@ -26,7 +26,7 @@
 .c-intro {
   @include font-size($h2);
   color: var(--theme);
-  font-weight: 300;
+  // font-weight: 300;
   // font-family: $font-secondary;
 
   em {
@@ -46,11 +46,32 @@
   }
 }
 
-.c-lead {
+.c-subtitle {
   @include font-size($h3,1.5);
+  font-weight: 400;
   color: var(--theme);
 
   @include mq(large) {
     @include font-size($h2,1.5);
+  }
+}
+
+.c-lead {
+  @include font-size($h3,1.5);
+  font-weight: 300;
+  color: var(--theme);
+
+  @include mq(large) {
+    @include font-size($h2,1.5);
+  }
+}
+
+.c-para {
+  @include font-size($h6,1.5);
+  font-weight: 300;
+  color: var(--theme);
+
+  @include mq(large) {
+    @include font-size($h5,1.5);
   }
 }

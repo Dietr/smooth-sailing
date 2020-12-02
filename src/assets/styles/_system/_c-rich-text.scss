@@ -4,6 +4,7 @@
 
 .c-rich-text {
   color: var(--theme);
+  font-weight: 300;
 
   > *,
   ul {
@@ -13,7 +14,7 @@
   a {
     font-size: inherit;
     line-height: inherit;
-    font-weight: inherit;
+    font-weight: 400;
     display: inline-flex;
     transition: color $transition;
     text-underline-offset: .1em;
