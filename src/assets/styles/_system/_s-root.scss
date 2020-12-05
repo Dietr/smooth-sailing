@@ -5,40 +5,38 @@
 // Primary
 :root {
   --color-mode: 'light';
-  --brand: #{$pink-900};
-  --theme: #{$pink-900};
+  --brand: #{$blue-900};
+  --theme: #{$red-900};
   --theme-light: #{$gray-300};
-  --theme-xlight: #{$pink-200};
+  --theme-xlight: #{$purple-200};
   --theme-xxlight: #{$gray-100};
   --theme-tint: #{$gray-400};
   --theme-tint-light: #{$gray-300};
-  --theme-background: #{$pink-100};
+  --theme-background: #{$red-300};
   --theme-border: #{$white};
   --theme-card: #{$white};
-  --link: #{$pink-900};
-  --link-hover: #{$pink-900};
-
-  --link-active: #{$pink-900};
-  --selection: #{$pink-200};
-  --outline: #{$pink-600};
+  --link: #{$red-800};
+  --link-hover: #{$red-800};
+  --link-active: #{$red-800};
+  --selection: #{$purple-200};
+  --outline: #{$purple-600};
 }
 
 // Primary dark
 @include dark-mode() {
-  --brand: #{$pink-100};
-  --theme: #{$pink-100};
+  --brand: #{$purple-400};
+  --theme: #{$blue-100};
   --theme-light: #{$gray-300};
-  --theme-xlight: #{$pink-600};
+  --theme-xlight: #{$blue-700};
   --theme-xxlight: #{$gray-100};
   --theme-tint: #{$gray-400};
   --theme-tint-light: #{$gray-300};
-  --theme-background: #{$pink-900};
+  --theme-background: #{$blue-900};
   --theme-border: #{$white};
   --theme-card: #{$white};
-  --link: #{$pink-100};
-  --link-hover: #{$pink-100};
-
-  --link-active: #{$pink-100};
-  --selection: #{$pink-600};
-  --outline: #{$pink-600};
+  --link: #{$blue-300};
+  --link-hover: #{$blue-300};
+  --link-active: #{$blue-300};
+  --selection: #{$blue-600};
+  --outline: #{$blue-600};
 }

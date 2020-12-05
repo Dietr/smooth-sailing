@@ -27,7 +27,8 @@
   @include font-size($h2);
   color: var(--theme);
   // font-weight: 300;
-  // font-family: $font-secondary;
+  font-weight: 600;
+  font-family: $font-secondary;
 
   em {
     font-style: italic;
