@@ -10,10 +10,10 @@
   letter-spacing: .05rem;
   position: absolute;
   z-index: $z-index-gamma;
-  top: $unit + $unit-small*1.5;
+  top: $unit + $unit-small*2;
   right: $unit-medium - $unit-small;
-  color: var(--theme-background);
-  background-color: var(--link);
+  color: var(--toggle);
+  background-color: var(--toggle-background);
   border-radius: $unit-medium;
   display: block;
   padding: 0 $unit $unit-tiny;
@@ -21,7 +21,12 @@
 
   &:hover,
   &:focus {
-    background-color: var(--link-hover);
+    background-color: var(--toggle-hover-background);
+  }
+
+  .has-nav & {
+    color: var(--toggle-active);
+    background-color: var(--toggle-active-background);
   }
 
   @include mq(navigation) {
@@ -36,7 +41,7 @@
     right: 100%;
     width: 100%;
     height: 100%;
-    background-color: var(--theme-light);
+    background-color: var(--navigation-holder);
 
     &.is-visible {
       right: 0;
@@ -58,7 +63,7 @@
 .c-navigation__item {
   @include mq($until: navigation) {
     & + & {
-      margin-top: $unit-medium + $unit;
+      margin-top: $unit-large;
     }
   }
 
@@ -78,21 +83,23 @@
 .c-navigation__link {
   @include font-size($h5);
   display: block;
-  color: var(--link);
+  color: var(--navigation);
   text-decoration: none;
   text-underline-offset: .1em;
   transition: color $transition;
   padding-bottom: $unit-tiny;
-  padding-left: $unit-small;
-  padding-right: $unit-small;
+  padding-left: $unit;
+  padding-right: $unit;
+  font-weight: 600;
+
 
   &:hover,
   &:focus {
-    color: var(--link-active);
+    color: var(--navigation-hover);
     text-decoration: underline;
     text-decoration-thickness: .2rem;
-
   }
+
 
   &:focus {
     outline-offset: .4rem;
@@ -100,23 +107,33 @@
   }
 
   .is-active > & {
-    color: var(--link-active);
-    background-color: var(--theme-xlight);
-    border-radius: $radius;
+    color: var(--navigation-active);
+    background-color: var(--navigation-active-background);
+    border-radius: $radius*2;
+    text-decoration: none;
   }
 
   @include mq($until: navigation) {
-    @include font-size($h2);
+    @include font-size($h1);
+
+    .has-nav & {
+      color: $white;
+    }
+
+    .has-nav &:hover,
+    .has-nav &:focus {
+      color: $white;
+    }
   }
 
   @include mq(navigation) {
-    padding-top: $unit-tiny/2;
-    padding-bottom: $unit-tiny + $unit-tiny/2;
+    padding-top: $unit-tiny;
+    padding-bottom: $unit-tiny + $unit-tiny;
   }
 
   @include mq(medium) {
     @include font-size($h4);
     padding-top: 0;
-    padding-bottom: $unit-tiny;
+    padding-bottom: $unit-tiny * 1.5;
   }
 }

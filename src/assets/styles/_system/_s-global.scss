@@ -10,7 +10,7 @@ $mq-breakpoints: (
   large: 1280px,
   huge: 1500px,
   xhuge: 1550px,
-  navigation: 850px
+  navigation: 600px
 );
 
 // Transitions
@@ -26,3 +26,5 @@ $radius: $unit;
 $z-index-alpha: 1;
 $z-index-beta: 2;
 $z-index-gamma: 3;
+
+$image-height: 500px;

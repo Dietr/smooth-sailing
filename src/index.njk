@@ -6,20 +6,21 @@ title: Home
 {# Intro #}
 <div class="c-hero o-layout__full">
   <div class="c-hero__graphic" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 6600">
+    <svg xmlns="http://www.w3.org/2000/svg" width="6600" height="6600" viewBox="0 0 6600 6600">
+      <path stroke="none" d="M0,6600 L0,3300 C1822.31257,3300 3300,4777.63926 3300,6600 L0,6600 Z"/>
       <path fill="none" d="M3300,6600 C3300,4777.63926 1822.31257,3300 0,3300 C1822.31257,3300 3300,1822.79429 3300,0.0481723695 C3300,1822.79429 4777.63926,3300 6600,3300 C4777.63926,3300 3300,4777.63926 3300,6600"/>
     </svg>
   </div>
 
   <div class="o-layout o-flow o-flow--large c-hero__content">
-    <div class="o-layout__content">
-      <p class="c-page-intro">
+    <div class="o-layout__page-title">
+      <p class="c-page-intro c-hero__title">
         A design studio<br> for durable design.
       </p>
     </div>
     <div class="o-layout__content-right">
       <p class="c-lead">
-        We design your digital products and help shape all processes for a user centered organization. This involves user research, UX design, product decision making, understanding your business and a good amount of people skills.
+        <strong>We design your digital products and help shape all processes for a user centered organization.</strong> This involves user research, UX design, product decision making, understanding your business and a good amount of people skills.
       </p>
     </div>
   </div>
@@ -27,95 +28,109 @@ title: Home
 </div>
 
 {# Services #}
-<div class="o-layout__full o-layout">
+<div class="o-layout__full c-cases">
+  <div class="c-cases__graphic" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 6600">
+      <path stroke="none"  d="M3300,3300.09634 L3300,0.096344739 C5122.31257,0.096344739 6600,1477.73561 6600,3300.09634 L3300,3300.09634 Z" transform="rotate(180 4950 1650.096)"/>
+      <path fill="none" d="M6600,5.02408618 C4777.63926,5.02408618 3300,1482.66335 3300,3305.02409 C3300,1482.66335 1822.31257,5.02408618 0,5.02408618" transform="rotate(180 3300 1655.024)"/>
+    </svg>
+  </div>
+
   {# Section title #}
   <h1 class="u-hidden-visually">Cases</h1>
 
-  {# Article #}
-  <div class="o-layout__content-left u-xxlight">
-    <article class="o-box">
-      {% image "flexmail", "alt text", "c-image--full u-accent-one" %}
-      <div class="o-box c-rich-text c-rich-text--short">
-        <h2>Flexmail</h2>
-        <p>We guided this e-mail marketing tool into a new century, from product vision to finding the right sailors.</p>
-      </div>
-    </article>
+  <div class="o-grid c-grid-offset">
+    {# Article #}
+    <div class="o-grid__item u-3/4@small u-1/2@medium">
+      <article class="c-card c-card--tint-one">
+        {% image "png", "flexmail", "alt text", "c-image--full" %}
+        <div class="o-box o-box--large c-card__body c-rich-text c-rich-text--short">
+          <h2>Flexmail</h2>
+          <p>We guided this e-mail marketing tool into a new century, from product vision to finding the right sailors.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="o-grid__item u-3/4@small u-1/2@medium">
+      <article class="c-card c-card--tint-two">
+        {% image "png", "sweepbright", "alt text", "c-image--full" %}
+        <div class="o-box o-box--large c-card__body c-rich-text c-rich-text--short">
+          <h2>Sweepbright</h2>
+          <p>We sparked the first concepts of this start-up based on the hours we spent in a real estate brokers car.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="o-grid__item u-3/4@small u-1/2@medium">
+      <article class="c-card c-card--tint-three">
+        {% image "png", "teamleader", "alt text", "c-image--full" %}
+        <div class="o-box o-box--large c-card__body c-rich-text c-rich-text--short">
+          <h2>Teamleader</h2>
+          <p>We dove into the way agencies and construction companies organise their metaphorical shipyards. Hint: they work very hard..</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="o-grid__item u-3/4@small u-1/2@medium">
+      <article class="c-card c-card--tint-four">
+        {% image "png", "liantis", "alt text", "c-image--full" %}
+        <div class="o-box o-box--large c-card__body c-rich-text c-rich-text--short">
+          <h2>Liantis</h2>
+          <p>We merged all 23 client tools from three intranets into one consistent way of working. To get to that point we card-sorted with entrepreneurs and their accountants.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="o-grid__item u-3/4@small u-1/2@medium">
+      <article class="c-card c-card--tint-five">
+        {% image "png", "schoolonline", "alt text", "c-image--full" %}
+        <div class="o-box o-box--large c-card__body c-rich-text c-rich-text--short">
+          <h2>SchoolOnline</h2>
+          <p>We researched how student care is done in primary schools and how software could support that.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="o-grid__item u-3/4@small u-1/2@medium">
+      <article class="c-card c-card--tint-six">
+        {% image "png", "osoc", "alt text", "c-image--full" %}
+        <div class="o-box o-box--large c-card__body c-rich-text c-rich-text--short">
+          <h2>Open Summer of Code & Hack your future</h2>
+          <p>We coached students and refugees to a higher level of open data product design. We even hired some of them along the way.</p>
+        </div>
+      </article>
+    </div>
   </div>
-
-  <div class="o-layout__right">
-    <article class="o-box">
-      {% image "sweepbright", "alt text", "c-image--full" %}
-      <div class="o-box c-rich-text c-rich-text--short">
-        <h2>Sweepbright</h2>
-        <p>We sparked the first concepts of this start-up based on the hours we spent in a real estate brokers car.</p>
-      </div>
-    </article>
-  </div>
-
-  {# Article #}
-  <div class="o-layout__left">
-    <article class="o-box o-box--huge">
-      {% image "teamleader", "alt text", "c-image--full" %}
-      <div class="o-box c-rich-text c-rich-text--short">
-        <h2>Teamleader</h2>
-        <p>We dove into the way agencies and construction companies organise their metaphorical shipyards. Hint: they work very hard..</p>
-      </div>
-    </article>
-  </div>
-
-  {# Article #}
-  <div class="o-layout__right">
-    <article class="o-box">
-      {% image "liantis", "alt text", "c-image--full" %}
-      <div class="o-box c-rich-text c-rich-text--short">
-        <h2>Liantis</h2>
-        <p>We merged all 23 client tools from three intranets into one consistent way of working. To get to that point we card-sorted with entrepreneurs and their accountants.</p>
-      </div>
-    </article>
-  </div>
-
-  {# Article #}
-  <div class="o-layout__left">
-    <article class="o-box">
-      {% image "schoolonline", "alt text", "c-image--full" %}
-      <div class="o-box c-rich-text c-rich-text--short">
-        <h2>SchoolOnline</h2>
-        <p>We researched how student care is done in primary schools and how software could support that.</p>
-      </div>
-    </article>
-  </div>
-
-  {# Article #}
-  <div class="o-layout__right">
-    <article class="o-box o-box--huge">
-      {% image "osoc", "alt text", "c-image--full" %}
-      <div class="o-box c-rich-text c-rich-text--short">
-        <h2>Open Summer of Code & Hack your future</h2>
-        <p>We coached students and refugees to a higher level of open data product design. We even hired some of them along the way.</p>
-      </div>
-    </article>
-  </div>
-
-
 </div>
 
 {# About #}
-<div class="o-layout__content-right">
-  <div class="o-row-large o-flow">
-    <h1 class="c-intro">Sail with us!</h1>
-    <p class="c-lead">
-      We believe that software design is a continuous process of matching the needs of your users with your business goals and engineering roadmap. And no, that is never a smooth sail, but we are always on your side.
-    </p>
-    <p class="c-lead">
-      If you’re bobbing around in client requests, prioritization and interface patterns, let us know. We’ll come and save your soul!
-    </p>
+<div class="o-layout__full c-about">
+  <div class="c-about__image">
+    {% image "jpg", "team", "alt text", "c-image--about" %}
+  </div>
+
+  <div class="c-about__graphic" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 3300">
+      <path fill-rule="evenodd" d="M3300,3300.04817 C3300,1477.68743 1822.31257,0.0481723695 0,0.0481723695 C1822.31257,0.0481723695 3300,-1477.15754 3300,-3299.90366 C3300,-1477.15754 4777.63926,0.0481723695 6600,0.0481723695 C4777.63926,0.0481723695 3300,1477.68743 3300,3300.04817" transform="rotate(180 3300 .072)"/>
+    </svg>
+  </div>
+  <div class="o-layout c-about__content">
+    <div class="o-layout__pre-cta o-flow">
+      <h1 class="c-intro">Sail with us!</h1>
+      <p class="c-lead">
+        We believe that software design is a continuous process of matching the needs of your users with your business goals and engineering roadmap. And no, that is never a smooth sail, but we are always on your side.
+      </p>
+      <p class="c-lead">
+        <strong>If you’re bobbing around in client requests, prioritization and interface patterns, let us know. We’ll come and save your soul!</strong>
+      </p>
+    </div>
   </div>
 </div>
 
-<div class="o-layout__content-left">
-  <div class="o-row-large o-flow">
-    <p class="c-intro">
-      Contact our captain via <a href="mailto:hannes@smoothsailing.be" class="c-link">hannes@smoothsailing.be</a>. <br>And be prepared for endless puns.
+<div class="o-layout__full o-layout c-contact">
+  <div class="o-layout__cta">
+    <p class="c-page-cta">
+      Contact our captain via<br> <a href="mailto:hannes@smoothsailing.be" class="c-link">hannes&#8203;@&#8203;smoothsailing.be</a>. <br>And be prepared for<br> endless puns.
     </p>
   </div>
 </div>

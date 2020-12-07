@@ -1,12 +1,17 @@
-<footer class="o-row-huge c-footer" role="contentinfo">
+<footer class="o-row-large c-footer" role="contentinfo">
   <div class="o-layout">
-    <div class="o-layout__left o-flow c-footer__main c-rich-text">
+    <div class="o-layout__footer-left o-flow c-footer__main c-rich-text">
+      <div class="c-brand-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 234">
+          <path fill-rule="evenodd" d="M117.075,234.15 C117.075,169.499 64.651,117.075 4.26325641e-14,117.075 C64.651,117.075 117.075,64.668 117.075,-1.42108547e-14 C117.075,64.668 169.499,117.075 234.15,117.075 C169.499,117.075 117.075,169.499 117.075,234.15"/>
+        </svg>
+      </div>
       <ul>
         <li><a href="/disclaimer/">Disclaimer</a></li>
         <li><a href="/accessibility-statement/">Accessibility statement</a></li>
       </ul>
     </div>
-    <div class="o-layout__right c-rich-text c-footer__aside">
+    <div class="o-layout__footer-right c-rich-text c-footer__aside">
       <p>&copy; {{ build.timestamp | dateToFormat('yyyy') }} Smooth Sailing, unless otherwise specified.</p>
     </div>
   </div>

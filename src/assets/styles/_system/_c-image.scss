@@ -9,4 +9,18 @@
 
 .c-image--full {
   max-width: 100%;
+  height: $image-height/2;
+  object-fit: contain;
+
+  @include mq(medium) {
+    height: $image-height/1.5;
+  }
+
+  @include mq(large) {
+    height: $image-height/1.7;
+  }
+
+  @include mq(huge) {
+    height: $image-height;
+  }
 }

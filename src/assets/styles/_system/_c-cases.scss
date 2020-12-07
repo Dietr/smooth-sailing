@@ -1,0 +1,93 @@
+.c-cases {
+  position: relative;
+  z-index: 1;
+  padding-left: $unit;
+  padding-right: $unit;
+  padding-bottom: $unit-large;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: $image-height/2;
+    left: 0;
+    width: 100%;
+    height: calc(100% - #{$image-height/2});
+    background-color: var(--theme);
+  }
+
+  @include mq(medium) {
+    padding-bottom: $unit-huge * 3;
+
+    &:before {
+      top: $image-height/1.5;
+      height: calc(100% - #{$image-height/1.5});
+    }
+  }
+
+  @include mq(large) {
+    padding-left: $unit-large;
+    padding-right: $unit-large;
+
+    &:before {
+      top: $image-height/1.7;
+      height: calc(100% - #{$image-height/1.7});
+    }
+  }
+
+  @include mq(huge) {
+    &:before {
+      top: $image-height;
+      height: calc(100% - #{$image-height});
+    }
+  }
+}
+
+  .c-cases__graphic {
+    position: absolute;
+    top: $image-height/2;
+    right: 0;
+    width: calc(100% + #{$unit-huge*2});
+    height: auto;
+    display: block;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--theme-background);
+      stroke: var(--theme-xlight);
+      stroke-width: 2rem;
+      display: block;
+    }
+
+    @include mq(small) {
+      svg {
+        stroke-width: 1.5rem;
+      }
+    }
+
+    @include mq(medium) {
+      &:before {
+        top: $image-height/1.5;
+      }
+
+      svg {
+        stroke-width: 1rem;
+      }
+    }
+
+    @include mq(large) {
+      top: $image-height/1.7;
+
+      svg {
+        stroke-width: .7rem;
+      }
+    }
+
+    @include mq(huge) {
+      top: $image-height;
+
+      svg {
+        stroke-width: .7rem;
+      }
+    }
+  }

@@ -8,17 +8,35 @@
   flex-direction: column;
   height: 100%;
   background-color: var(--theme-card);
-  border-radius: $radius;
-  box-shadow: 0px 4px 11px 6px rgba(0, 0, 0, 0.06);
-  transition: box-shadow $transition;
+}
 
-  &:hover {
-    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.1);
-  }
+.c-card--tint-one {
+  background-color: $purple-800;
+}
+
+.c-card--tint-two {
+  background-color: $blue-300;
+}
+
+.c-card--tint-three {
+  background-color: $green-400;
+}
+
+.c-card--tint-four {
+  background-color: $purple-200;
+}
+
+.c-card--tint-five {
+  background-color: $red-400;
+}
+
+.c-card--tint-six {
+  background-color: $blue-700;
 }
 
 .c-card__body {
   flex-grow: 1;
+  background-color: $white;
 }
 
 .c-card__link {

@@ -6,6 +6,10 @@
   color: var(--theme);
   font-weight: 300;
 
+  .c-card & {
+    color: var(--theme-text);
+  }
+
   > *,
   ul {
     @include font-size($h5);
@@ -57,7 +61,7 @@
   }
 
   > h2 + * {
-    margin-top: $unit-tiny;
+    margin-top: $unit;
   }
 
   @include mq(medium) {
@@ -82,13 +86,6 @@
 .c-rich-text--short {
   > *,
   ul {
-    max-width: 55ch;
-  }
-
-  @include mq(medium) {
-    > *,
-    ul {
-      max-width: 40ch;
-    }
+    max-width: 70ch;
   }
 }

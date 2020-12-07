@@ -3,19 +3,29 @@
    ================================== */
 
 .c-footer {
+  padding-bottom: $unit-large;
+  background-color: var(--theme-tint);
 
+  @include mq(medium) {
+    padding-bottom: $unit-large*2;
+  }
 }
 
 .c-footer__main {
 }
 
 .c-footer__aside {
-  text-align: right;
+  text-align: left;
   align-self: end;
   padding-bottom: $unit-tiny;
-  padding-left: $unit-large;
+  color: var(--navigation);
 
   @include mq($until: medium) {
     padding-top: $unit-large;
+  }
+
+  @include mq(medium) {
+    padding-left: $unit-large;
+    text-align: right;
   }
 }
