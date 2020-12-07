@@ -4,8 +4,8 @@
 // Reference and attribution: https://github.com/andybelldesign/hylia/blob/master/src/_includes/partials/global/service-worker.js
 
 const CACHE_KEYS = {
-  PRE_CACHE: `precache-{{ page.date | date: "%d%M%Y" }}{{ manifest["screen.min.css"] | remove: "screen-" | remove: ".min.css" }}{{ manifest["scripts.js"] | remove: "scripts-" | remove: ".js" }}`,
-  RUNTIME: `runtime-{{ page.date | date: "%d%M%Y" }}{{ manifest["screen.min.css"] | remove: "screen-" | remove: ".min.css" }}{{ manifest["scripts.js"] | remove: "scripts-" | remove: ".js" }}`
+  PRE_CACHE: `precache-1`,
+  RUNTIME: `runtime-1`
 };
 
 // URLS that we don’t want to end up in the cache
