@@ -23,6 +23,30 @@
   }
 }
 
+.c-page-intro {
+  @include font-size($h1);
+  color: var(--theme);
+  font-weight: 600;
+  font-family: $font-secondary;
+
+  em {
+    font-style: italic;
+  }
+
+  @include mq(medium) {
+    @include font-size($large);
+  }
+
+  @include mq(large) {
+    // @include font-size($huge,1.2);
+    @include font-size($xhuge,1.1);
+  }
+
+  @include mq(huge) {
+    @include font-size($xhuge,1.1);
+  }
+}
+
 .c-intro {
   @include font-size($h2);
   color: var(--theme);

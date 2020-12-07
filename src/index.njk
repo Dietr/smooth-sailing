@@ -4,35 +4,40 @@ title: Home
 ---
 
 {# Intro #}
-<div class="o-row-large o-layout__full o-layout o-flow">
-  <div class="o-layout__content">
-    <p class="c-intro">
-      A design studio for durable design.
-    </p>
+<div class="c-hero o-layout__full">
+  <div class="c-hero__graphic" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 6600">
+      <path fill="none" d="M3300,6600 C3300,4777.63926 1822.31257,3300 0,3300 C1822.31257,3300 3300,1822.79429 3300,0.0481723695 C3300,1822.79429 4777.63926,3300 6600,3300 C4777.63926,3300 3300,4777.63926 3300,6600"/>
+    </svg>
   </div>
-  <div class="o-layout__content-right">
-    <p class="c-lead">
-      We design your digital products and help shape all processes for a user centered organization. This involves user research, UX design, product decision making, understanding your business and a good amount of people skills.
-    </p>
+
+  <div class="o-layout o-flow o-flow--large c-hero__content">
+    <div class="o-layout__content">
+      <p class="c-page-intro">
+        A design studio<br> for durable design.
+      </p>
+    </div>
+    <div class="o-layout__content-right">
+      <p class="c-lead">
+        We design your digital products and help shape all processes for a user centered organization. This involves user research, UX design, product decision making, understanding your business and a good amount of people skills.
+      </p>
+    </div>
   </div>
+
 </div>
 
 {# Services #}
-<div class="o-row o-layout__full o-layout">
+<div class="o-layout__full o-layout">
   {# Section title #}
   <h1 class="u-hidden-visually">Cases</h1>
 
   {# Article #}
-  <div class="o-layout__container">
-    <article class="o-box o-grid o-grid--middle">
-      <div class="o-grid__item u-1/2">
-        {% image "flexmail", "alt text", "c-image--full" %}
-      </div>
-      <div class="o-grid__item u-1/2">
-        <div class="o-box c-rich-text c-rich-text--short">
-          <h2>Flexmail</h2>
-          <p>We guided this e-mail marketing tool into a new century, from product vision to finding the right sailors.</p>
-        </div>
+  <div class="o-layout__content-left u-xxlight">
+    <article class="o-box">
+      {% image "flexmail", "alt text", "c-image--full u-accent-one" %}
+      <div class="o-box c-rich-text c-rich-text--short">
+        <h2>Flexmail</h2>
+        <p>We guided this e-mail marketing tool into a new century, from product vision to finding the right sailors.</p>
       </div>
     </article>
   </div>

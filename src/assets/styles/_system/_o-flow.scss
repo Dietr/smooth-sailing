@@ -19,3 +19,21 @@
     }
   }
 }
+
+.o-flow--large {
+  > * + * {
+    margin-top: $unit * 2;
+  }
+
+  @include mq(medium) {
+    > * + * {
+      margin-top: $unit * 3;
+    }
+  }
+
+  @include mq(large) {
+    > * + * {
+      margin-top: $unit-large + $unit*2;
+    }
+  }
+}
