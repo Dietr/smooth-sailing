@@ -10,6 +10,10 @@
     color: var(--theme-text);
   }
 
+  strong {
+    font-weight: 500;
+  }
+
   > *,
   ul {
     @include font-size($h5);

@@ -113,6 +113,10 @@
   font-weight: 300;
   color: var(--theme-text);
 
+  strong {
+    font-weight: 500;
+  }
+
   @include mq(medium) {
     @include font-size($h3,1.5);
   }
