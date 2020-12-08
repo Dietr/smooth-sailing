@@ -29,3 +29,32 @@
     outline: .2rem dashed var(--outline);
   }
 }
+
+
+.c-link--block {
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--theme-cta);
+  border-radius: $radius*3;
+  padding: $unit/2 $unit*2 $unit*1.2;
+  text-align: center;
+  margin-top: $unit-small;
+  margin-bottom: 0;
+
+  &,
+  &:visited {
+    color: var(--theme-xxlight);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--theme-xxlight);
+    text-decoration: none;
+    background-color: var(--theme-cta);
+  }
+
+  &:focus {
+    outline-offset: .2rem;
+    outline: .2rem dashed var(--outline);
+  }
+}

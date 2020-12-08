@@ -4,12 +4,46 @@ eleventyExcludeFromCollections: true
 ---
 
 {# Intro #}
-<div class="o-layout__content-right">
-  <div class="o-row-large o-flow">
-    <h1 class="c-intro">
-      404 –
-      <br>
-      Page not found
-    </h1>
+<div class="o-layout__full c-hero c-graphic">
+  <div class="c-graphic__item c-graphic__item--border c-graphic__item--fill c-graphic__item--bottom" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 3300">
+      <path d="M3300,6600 C3300,4777.63926 1822.31257,3300 0,3300 C1822.31257,3300 3300,1822.79429 3300,0.0481723695 C3300,1822.79429 4777.63926,3300 6600,3300 C4777.63926,3300 3300,4777.63926 3300,6600"/>
+    </svg>
+  </div>
+
+  <div class="o-layout o-flow o-flow--large c-hero__content">
+    <div class="o-layout__page-title">
+      <h1 class="c-page-intro c-hero__title">
+        404 –<br>
+        Page not found
+      </h1>
+    </div>
+  </div>
+</div>
+
+{# About #}
+<div class="o-layout__full c-about c-graphic">
+  <div class="c-about__image">
+    {% image "jpg", "team", "alt text", "c-image--about" %}
+  </div>
+
+  <div class="o-layout c-about__content">
+    <div class="o-layout__pre-cta o-flow">
+      <h1 class="c-intro">Sail with us!</h1>
+      <p class="c-lead">
+        We believe that software design is a continuous process of matching the needs of your users with your business goals and engineering roadmap. And no, that is never a smooth sail, but we are always on your side.
+      </p>
+      <p class="c-lead">
+        <strong>If you’re bobbing around in client requests, prioritization and interface patterns, let us know. We’ll come and save your soul!</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="o-layout__full o-layout c-contact">
+  <div class="o-layout__cta">
+    <p class="c-page-cta">
+      Contact Hannes via<br> <a href="mailto:captain@smoothsailing.be" class="c-link">captain&#8203;@&#8203;smoothsailing.be</a>. <br>And be prepared for<br> endless puns.
+    </p>
   </div>
 </div>

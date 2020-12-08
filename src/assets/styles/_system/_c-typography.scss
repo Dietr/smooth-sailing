@@ -34,11 +34,10 @@
   }
 
   @include mq(medium) {
-    @include font-size($large);
+    @include font-size($huge);
   }
 
   @include mq(large) {
-    // @include font-size($huge,1.2);
     @include font-size($xhuge,1.1);
   }
 
@@ -118,7 +117,7 @@
   }
 
   @include mq(medium) {
-    @include font-size($h3,1.5);
+    @include font-size($h2,1.5);
   }
 
   @include mq(large) {

@@ -79,6 +79,10 @@ $grid-unit-huge  : 4.8rem !default;
   padding: 0; /* [2] */
   list-style: none; /* [1] */
   margin: -$grid-unit; /* [4] */
+
+  @include mq(large) {
+    margin: -$grid-unit*1.5;
+  }
 }
 
 
@@ -90,6 +94,10 @@ $grid-unit-huge  : 4.8rem !default;
 .o-grid__item {
   width: 100%; /* [1] */
   padding: $grid-unit;
+
+  @include mq(large) {
+    padding: $grid-unit*1.5;
+  }
 }
 
 

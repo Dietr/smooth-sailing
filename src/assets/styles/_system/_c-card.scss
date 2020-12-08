@@ -10,6 +10,14 @@
   background-color: var(--theme-card);
 }
 
+.c-card--article {
+  @include mq(medium) {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+}
+
 .c-card--tint-one {
   background-color: $purple-800;
 }
@@ -39,6 +47,30 @@
   background-color: $white;
 }
 
+.c-card__main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include mq(medium) {
+    width: calc(100% - #{$unit-huge*4 + $unit-large + $unit});
+  }
+}
+
+.c-card__image {
+  position: relative;
+  flex-grow: 1;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include mq(medium) {
+    width: $unit-huge*4 + $unit-large + $unit;
+  }
+}
+
 .c-card__link {
   &:after {
     content: '';
@@ -54,7 +86,6 @@
 .c-card__cta {
   @include font-size($base);
   color: var(--link-hover);
-  letter-spacing: .05rem;
   opacity: 0;
   transition: opacity $transition;
 

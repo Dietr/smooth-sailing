@@ -1,0 +1,94 @@
+---
+layout: base
+title: Opinions
+section: "Opinions"
+theme: "c-theme-secondary"
+metaTitle: "Smooth Sailing - Opinions"
+metaDescription: "The collection of a harbor full of interesting articles on product design and - management."
+metaImage: ""
+---
+
+{# Intro #}
+<div class="o-layout__full c-hero c-graphic">
+  <div class="c-graphic__item c-graphic__item--border c-graphic__item--fill c-graphic__item--bottom" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 3300">
+      <path d="M3300,6600 C3300,4777.63926 1822.31257,3300 0,3300 C1822.31257,3300 3300,1822.79429 3300,0.0481723695 C3300,1822.79429 4777.63926,3300 6600,3300 C4777.63926,3300 3300,4777.63926 3300,6600"/>
+    </svg>
+  </div>
+
+  <div class="o-layout o-flow o-flow--large c-hero__content">
+    <div class="o-layout__page-title">
+      <h1 class="c-page-intro c-hero__title">
+        Opinions
+      </h1>
+    </div>
+    <div class="o-layout__content-right">
+      <p class="c-page-lead">
+        Dive into our view on product design and - management.<br> <strong>All based on research and personal experiences.</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+{# Articles #}
+<div class="o-layout__full o-layout c-articles c-graphic">
+  <div class="c-graphic__item c-graphic__item--border c-graphic__item--fill c-graphic__item--top" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 3300">
+      <path d="M3300,3300 C3300,1477.62596 1822.31257,-0.0240863606 0,-0.0240863606 C1822.31257,-0.0240863606 3300,-1477.24058 3300,-3300 C3300,-1477.24058 4777.63926,-0.0240863606 6600,-0.0240863606 C4777.63926,-0.0240863606 3300,1477.62596 3300,3300"/>
+    </svg>
+  </div>
+
+  <div class="o-layout__container">
+    <div class="o-row-large u-padding-top-none">
+      <div class="o-grid">
+        {% for article in opinions.medium %}
+        <div class="o-grid__item">
+          <article class="c-card c-card--article">
+            <div class="c-card__image">
+              {% image "jpg", article.image, "alt text", "c-image--about" %}
+            </div>
+            <div class="c-card__main">
+              <div class="o-box o-box--large c-rich-text c-card__body">
+                <h2><a href="{{ article.externalLink }}" class="c-link c-card__link" target="_blank" rel="noopener noreferrer">{{ article.title }}</a></h2>
+                <p>
+                  {{ article.excerpt }}
+                </p>
+              </div>
+              <div class="o-box o-box--large u-padding-top-none c-card__footer" aria-hidden="true">
+                <p class="c-card__cta">Continue reading</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{# About #}
+<div class="o-layout__full c-about c-graphic">
+  <div class="c-about__image">
+    {% image "jpg", "team", "alt text", "c-image--about" %}
+  </div>
+
+  <div class="o-layout c-about__content">
+    <div class="o-layout__pre-cta o-flow">
+      <h1 class="c-intro">Sail with us!</h1>
+      <p class="c-lead">
+        We believe that software design is a continuous process of matching the needs of your users with your business goals and engineering roadmap. And no, that is never a smooth sail, but we are always on your side.
+      </p>
+      <p class="c-lead">
+        <strong>If you’re bobbing around in client requests, prioritization and interface patterns, let us know. We’ll come and save your soul!</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="o-layout__full o-layout c-contact">
+  <div class="o-layout__cta">
+    <p class="c-page-cta">
+      Contact Hannes via<br> <a href="mailto:captain@smoothsailing.be" class="c-link">captain&#8203;@&#8203;smoothsailing.be</a>. <br>And be prepared for<br> endless puns.
+    </p>
+  </div>
+</div>

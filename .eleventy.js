@@ -45,8 +45,6 @@ module.exports = function (config) {
 
   // Layouts
   config.addLayoutAlias('base', 'base.njk')
-  config.addLayoutAlias('article', 'article.njk')
-  config.addLayoutAlias('case', 'case.njk')
 
   // Pass-through files
   config.addPassthroughCopy('src/robots.txt')
@@ -57,16 +55,6 @@ module.exports = function (config) {
 
   // Deep-Merge
   config.setDataDeepMerge(true)
-
-  // Collections
-  // ---
-  // Articles > sorted by date
-
-  config.addCollection('articles', collection => {
-    return collection.getFilteredByGlob('src/articles/*.md').sort(function(a, b) {
-      return b.date - a.date;
-    });
-  })
 
   // Base Config
   return {

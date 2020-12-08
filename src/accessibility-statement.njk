@@ -4,14 +4,24 @@ title: Accessibility statement
 ---
 
 {# Intro #}
-<div class="o-layout__content-left">
-  <div class="o-row-large o-flow">
-    <h1 class="c-intro">{{title}}</h1>
+<div class="o-layout__full c-hero c-graphic">
+  <div class="c-graphic__item c-graphic__item--border c-graphic__item--fill c-graphic__item--bottom" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6600 3300">
+      <path d="M3300,6600 C3300,4777.63926 1822.31257,3300 0,3300 C1822.31257,3300 3300,1822.79429 3300,0.0481723695 C3300,1822.79429 4777.63926,3300 6600,3300 C4777.63926,3300 3300,4777.63926 3300,6600"/>
+    </svg>
+  </div>
+
+  <div class="o-layout o-flow o-flow--large c-hero__content">
+    <div class="o-layout__page-title">
+      <h1 class="c-page-intro c-hero__title">
+        {{title}}
+      </h1>
+    </div>
   </div>
 </div>
 
-<div class="o-layout__content">
-  <div class="o-row-large c-rich-text">
+<div class="o-layout o-layout__full c-contact-page">
+  <div class="o-layout__content c-rich-text">
     <p>madewithlove BV is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone, and applying the relevant accessibility standards.</p>
 
     <h2>Conformance status</h2>

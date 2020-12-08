@@ -23,8 +23,7 @@
 
 .c-hero__graphic {
   position: absolute;
-  top: calc(100% + 2px);
-  transform: translateY(-50%);
+  bottom: -$unit-large;
   left: -$unit-huge*2;
   width: calc(100% + #{$unit-huge});
   height: auto;
@@ -40,6 +39,7 @@
   }
 
   @include mq(small) {
+    left: -$unit-huge;
     width: 100%;
 
     svg {

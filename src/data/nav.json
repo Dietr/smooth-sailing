@@ -5,11 +5,11 @@
       "url": "/"
     },
     {
-      "title": "Articles",
-      "url": "/articles/"
+      "title": "Opinions",
+      "url": "/opinions/"
     },
     {
-      "title": "Contact",
+      "title": "Contact us",
       "url": "/contact/"
     }
   ]

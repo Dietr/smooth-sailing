@@ -109,6 +109,18 @@ $layout-width: 80rem;
   }
 }
 
+.o-layout__pre-cta-left {
+  grid-column: one / nine;
+
+  @include mq(medium) {
+    grid-column: one / seven;
+  }
+
+  @include mq(large) {
+    grid-column: one / seven;
+  }
+}
+
 .o-layout__cta {
   grid-column: one / thirteen;
 }

@@ -1,0 +1,86 @@
+.c-graphic {
+  position: relative;
+}
+
+.c-graphic__item {
+  position: absolute;
+  display: block;
+  height: auto;
+  left: -$unit-huge*2;
+  width: calc(100% + #{$unit-huge*2});
+
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    fill: none;
+  }
+
+  @include mq(small) {
+    left: -$unit-huge*2;
+    width: calc(100% + #{$unit-huge});
+  }
+
+  @include mq(medium) {
+    left: -$unit-huge*3;
+    width: calc(100% + #{$unit-huge*2});
+  }
+
+  @include mq(large) {
+    left: -$unit-huge*3;
+    width: calc(100% - #{$unit-huge});
+  }
+}
+
+.c-graphic__item--border {
+  svg {
+    stroke: var(--theme-xlight);
+    stroke-width: 2rem;
+  }
+
+  @include mq(small) {
+    svg {
+      stroke-width: 1.5rem;
+    }
+  }
+
+  @include mq(medium) {
+    svg {
+      stroke-width: 1rem;
+    }
+  }
+
+  @include mq(large) {
+    svg {
+      stroke-width: .7rem;
+    }
+  }
+
+  @include mq(huge) {
+    svg {
+      stroke-width: .7rem;
+    }
+  }
+}
+
+.c-graphic__item--fill {
+  svg {
+    fill: var(--theme-background);
+  }
+}
+
+.c-graphic__item--bottom {
+  bottom: calc(-#{$unit-large} - 0px);
+
+  @include mq(medium) {
+    bottom: -$unit-huge;
+  }
+}
+
+.c-graphic__item--top {
+  top: calc(#{$unit-large} - 1px);
+
+  @include mq(medium) {
+    top: $unit-huge;
+  }
+}
