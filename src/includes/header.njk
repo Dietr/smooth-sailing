@@ -43,7 +43,7 @@
           <ul class="c-navigation">
             <!-- Define your site navigation in data/nav.json -->
             {% for item in nav.main %}
-            <li class="c-navigation__item {{ 'is-active' if item.url in page.url }}">
+            <li class="c-navigation__item {{ 'is-active' if item.title == section }}">
               <a href="{{ item.url }}" class="c-navigation__link">{{ item.title }}</a>
             </li>
             {% endfor %}

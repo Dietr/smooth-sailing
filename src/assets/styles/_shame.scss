@@ -107,6 +107,18 @@
 
 
 .c-grid-offset {
+  @include mq($until: small) {
+    > .o-grid__item:nth-child(odd) {
+      position: relative;
+      padding-right: $unit * 3;
+    }
+
+    > .o-grid__item:nth-child(even) {
+      position: relative;
+      padding-left: $unit * 3;
+    }
+  }
+
   @include mq(small) {
     > .o-grid__item:nth-child(even) {
       position: relative;

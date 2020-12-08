@@ -78,11 +78,7 @@ $grid-unit-huge  : 4.8rem !default;
   flex-wrap: wrap; /* [3] */
   padding: 0; /* [2] */
   list-style: none; /* [1] */
-  margin: -$grid-unit/2; /* [4] */
-
-  @include mq(large) {
-    margin: -$grid-unit;
-  }
+  margin: -$grid-unit; /* [4] */
 }
 
 
@@ -93,11 +89,7 @@ $grid-unit-huge  : 4.8rem !default;
 
 .o-grid__item {
   width: 100%; /* [1] */
-  padding: $grid-unit/2;
-
-  @include mq(large) {
-    padding: $grid-unit;
-  }
+  padding: $grid-unit;
 }
 
 
