@@ -8,7 +8,7 @@ $layout-width: 80rem;
 
 .o-layout {
   display: grid;
-  min-height: 100%;
+  // min-height: 100%;
   justify-content: stretch;
   align-items: stretch;
   grid-template-columns:
@@ -110,9 +110,9 @@ $layout-width: 80rem;
 }
 
 .o-layout__pre-cta-left {
-  grid-column: one / nine;
+  grid-column: one / thirtheen;
 
-  @include mq(medium) {
+  @include mq(small) {
     grid-column: one / seven;
   }
 

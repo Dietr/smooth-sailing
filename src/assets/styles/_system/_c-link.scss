@@ -32,14 +32,33 @@
 
 
 .c-link--block {
+  position: relative;
   display: inline-flex;
   justify-content: center;
-  background-color: var(--theme-cta);
+  background-color: var(--theme-accent);
   border-radius: $radius*3;
-  padding: $unit/2 $unit*2 $unit*1.2;
+  padding: $unit/2 $unit*2 $unit $unit;
   text-align: center;
-  margin-top: $unit-small;
-  margin-bottom: 0;
+  margin-top: $unit-small*1.5;
+  margin-bottom: $unit;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: $unit-large + $unit-tiny/2;
+
+  .c-icon {
+    position: absolute;
+    height: 100%;
+    width: $unit-large;
+    padding: $unit $unit/2 $unit $unit;
+    top: 0;
+    left: -$unit-large - $unit-tiny/2;
+    background-color: var(--theme-accent);
+    margin-left: 0;
+    border-top-left-radius: $radius*3;
+    border-bottom-left-radius: $radius*3;
+    opacity: .7;
+    transition: opacity $transition;
+  }
 
   &,
   &:visited {
@@ -48,13 +67,33 @@
 
   &:hover,
   &:focus {
-    color: var(--theme-xxlight);
+    color: var(--theme-background);
     text-decoration: none;
-    background-color: var(--theme-cta);
+    background-color: var(--theme-accent);
+
+    .c-icon {
+      opacity: .9;
+    }
   }
 
   &:focus {
     outline-offset: .2rem;
     outline: .2rem dashed var(--outline);
+  }
+
+  @include mq(medium) {
+    padding: $unit/2 $unit*2 $unit*1.2 $unit;
+    margin-left: $unit-large + $unit + $unit-tiny/2;
+
+    .c-icon {
+      width: $unit-large + $unit;
+      left: -$unit-large - $unit - $unit-tiny/2;
+    }
+  }
+
+  @include mq(large) {
+    .c-icon {
+      padding: $unit*1.4 $unit/2 $unit*1.4 $unit;
+    }
   }
 }

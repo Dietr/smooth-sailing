@@ -4,8 +4,10 @@
 
 .c-hero {
   position: relative;
+  z-index: 1;
   padding-top: $unit-large;
   padding-bottom: $unit-large;
+  background-color: var(--theme-secondary-background);
 
   @include mq(medium) {
     padding-top: $unit-large;
@@ -20,67 +22,3 @@
 .c-hero__title {
   position: relative;
 }
-
-.c-hero__graphic {
-  position: absolute;
-  bottom: -$unit-large;
-  left: -$unit-huge*2;
-  width: calc(100% + #{$unit-huge});
-  height: auto;
-  display: block;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: var(--theme);
-    stroke: var(--theme-xlight);
-    stroke-width: 2rem;
-    display: block;
-  }
-
-  @include mq(small) {
-    left: -$unit-huge;
-    width: 100%;
-
-    svg {
-      stroke-width: 1.5rem;
-    }
-  }
-
-  @include mq(medium) {
-    svg {
-      stroke-width: 1rem;
-    }
-  }
-
-  @include mq(large) {
-    svg {
-      stroke-width: .7rem;
-    }
-  }
-
-  @include mq(huge) {
-    svg {
-      stroke-width: .7rem;
-    }
-  }
-}
-
-// .c-hero__mask {
-//   position: absolute;
-//   top: -$unit-huge*2;
-//   left: -$unit-huge*2;
-//   width: 100%;
-//   display: block;
-//   z-index: 3;
-//   mix-blend-mode: darken;
-//   // opacity: .3;
-
-//   svg {
-//     width: 100%;
-//     height: 100%;
-//     fill: var(--theme);
-//     fill: $white;
-//     display: block;
-//   }
-// }

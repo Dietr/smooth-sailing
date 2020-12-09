@@ -2,27 +2,6 @@
    #TYPOGRAPHY
    ================================== */
 
-.c-huge {
-  @include font-size(5rem);
-  color: var(--theme-light);
-  font-weight: 600;
-  margin-bottom: $unit-tiny;
-  white-space: nowrap;
-  overflow: visible;
-
-  @include mq(small) {
-    @include font-size(9rem);
-  }
-
-  @include mq(medium) {
-    @include font-size(14rem);
-  }
-
-  @include mq(large) {
-    @include font-size(14rem);
-  }
-}
-
 .c-page-intro {
   @include font-size($h1);
   color: var(--theme-text);
@@ -48,7 +27,7 @@
 
 .c-page-cta {
   @include font-size($h2);
-  color: var(--theme-cta);
+  color: var(--theme-accent);
   font-weight: 600;
   font-family: $font-secondary;
 
@@ -76,7 +55,6 @@
 .c-intro {
   @include font-size($h2);
   color: var(--theme-text);
-  // font-weight: 300;
   font-weight: 600;
   font-family: $font-secondary;
 

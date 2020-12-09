@@ -19,27 +19,27 @@
 }
 
 .c-card--tint-one {
-  background-color: $purple-800;
+  background-color: var(--tint-one);
 }
 
 .c-card--tint-two {
-  background-color: $blue-300;
+  background-color: var(--tint-two);
 }
 
 .c-card--tint-three {
-  background-color: $green-400;
+  background-color: var(--tint-three);
 }
 
 .c-card--tint-four {
-  background-color: $purple-200;
+  background-color: var(--tint-four);
 }
 
 .c-card--tint-five {
-  background-color: $red-400;
+  background-color: var(--tint-five);
 }
 
 .c-card--tint-six {
-  background-color: $blue-700;
+  background-color: var(--tint-six);
 }
 
 .c-card__body {
@@ -93,5 +93,11 @@
   .c-card:focus-within & {
     color: var(--link-hover);
     opacity: 1;
+  }
+}
+
+.c-card__footer {
+  @include mq($until: medium) {
+    display: none;
   }
 }

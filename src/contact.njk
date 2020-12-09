@@ -26,23 +26,23 @@ metaImage: ""
 </div>
 
 {# About #}
-<div class="o-layout__full c-contact-page c-graphic">
-  <div class="c-contact-page__image">
-    {% image "jpg", "hannes", "alt text", "c-image--about" %}
-  </div>
-
-  <div class="o-layout c-about__content">
+<div class="o-layout__full c-container c-container--primary c-graphic">
+  <div class="o-layout c-container__content">
     <div class="o-layout__pre-cta-left o-flow">
       <p class="c-lead">
         If you’re bobbing around in client requests, prioritization and interface patterns, let us know. We’ll come and save your soul!
       </p>
       <p class="c-lead">
-        <strong>Contact Hannes via:</strong><br> <a href="mailto:captain@smoothsailing.be" class="c-link c-link--block">captain@smoothsailing.be</a>
+        <strong>Contact Hannes via:</strong><br> <a href="mailto:captain@smoothsailing.be" class="c-link c-link--block">{% icon "mail" %}captain@smoothsailing.be</a>
       </p>
       <p class="c-lead">
         He will reply - mighty fast - with some moments to have a call.
         <strong>Be prepared for endless puns.</strong>
       </p>
     </div>
+  </div>
+
+  <div class="c-container__image-right">
+    {% image "jpg", "hannes", "alt text", "c-image--about" %}
   </div>
 </div>

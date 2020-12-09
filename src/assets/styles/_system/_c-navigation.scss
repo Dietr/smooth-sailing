@@ -9,9 +9,9 @@
   font-weight: 400;
   letter-spacing: .05rem;
   position: absolute;
-  z-index: $z-index-gamma;
-  top: $unit + $unit-small*2;
-  right: $unit-medium - $unit-small;
+  z-index: 6;
+  top: $unit-tiny*1.5;
+  right: 0;
   color: var(--toggle);
   background-color: var(--toggle-background);
   border-radius: $unit-medium;
