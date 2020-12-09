@@ -4,7 +4,7 @@
 
 .c-footer {
   padding-bottom: $unit-large;
-  background-color: var(--theme-tint);
+  background-color: var(--theme-background);
 
   @include mq(medium) {
     padding-bottom: $unit-large*2;
