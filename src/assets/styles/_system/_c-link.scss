@@ -56,13 +56,13 @@
     margin-left: 0;
     border-top-left-radius: $radius*3;
     border-bottom-left-radius: $radius*3;
-    opacity: .7;
-    transition: opacity $transition;
+    opacity: .8;
+    // transition: opacity $transition;
   }
 
   &,
   &:visited {
-    color: var(--theme-xxlight);
+    color: $white;
   }
 
   &:hover,
@@ -70,9 +70,10 @@
     color: var(--theme-background);
     text-decoration: none;
     background-color: var(--theme-accent);
+    opacity: .8;
 
     .c-icon {
-      opacity: .9;
+      opacity: 1;
     }
   }
 

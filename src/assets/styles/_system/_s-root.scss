@@ -25,15 +25,6 @@
   --theme-tertiary-border: #{$blue-300};
   --theme-tertiary-background: #{$blue-900};
 
-  --theme-cta: #{$blue-600};
-
-  --theme-light: #{$gray-300};
-  --theme-xlight: #{$purple-300};
-  --theme-xxlight: #{$white};
-
-  --theme-tint: #{$white};
-  --theme-tint-light: #{$gray-300};
-
   --tint-one: #{$purple-800};
   --tint-two: #{$blue-300};
   --tint-three: #{$green-400};
@@ -54,7 +45,7 @@
   --toggle-active-background: #{$red-500};
 
   --link: #{$blue-800};
-  --link-hover: #{$blue-800};
+  --link-hover: #{$blue-700};
   --link-active: #{$blue-800};
 
   --selection: #{$purple-200};
@@ -64,33 +55,24 @@
 // .c-theme-secondary {
 //   --color-mode: 'light';
 
-//   --brand: #{$purple-500};
+//   --brand: #{$red-400};
 
-//   --theme: #{$red-900};
+//   --theme: #{$blue-900};
 //   --theme-text: #{$white};
-//   --theme-accent: #{$blue-600};
+//   --theme-accent: #{$red-600};
 //   --theme-card: #{$white};
 //   --theme-border: #{$blue-400};
-//   --theme-background: #{$red-900};
+//   --theme-background: #{$white};
 
 //   --theme-secondary: #{$blue-900};
-//   --theme-secondary-text: #{$blue-900};
-//   --theme-secondary-border: #{$blue-600};
-//   --theme-secondary-background: #{$blue-800};
+//   --theme-secondary-text: #{$green-900};
+//   --theme-secondary-border: #{$blue-700};
+//   --theme-secondary-background: #{$blue-900};
 
 //   --theme-tertiary: #{$white};
 //   --theme-tertiary-text: #{$white};
 //   --theme-tertiary-border: #{$blue-300};
 //   --theme-tertiary-background: #{$red-500};
-
-//   --theme-cta: #{$blue-600};
-
-//   --theme-light: #{$gray-300};
-//   --theme-xlight: #{$purple-300};
-//   --theme-xxlight: #{$white};
-
-//   --theme-tint: #{$white};
-//   --theme-tint-light: #{$gray-300};
 
 //   --tint-one: #{$purple-800};
 //   --tint-two: #{$blue-300};
@@ -99,25 +81,123 @@
 //   --tint-five: #{$red-400};
 //   --tint-six: #{$blue-700};
 
-//   --navigation-holder: #{$red-900};
-//   --navigation: #{$red-900};
-//   --navigation-hover: #{$red-800};
-//   --navigation-active: #{$red-500};
-//   --navigation-active-background: #{$red-900};
+//   --navigation-holder: #{$blue-900};
+//   --navigation: #{$blue-400};
+//   --navigation-hover: #{$blue-500};
+//   --navigation-active: #{$blue-300};
+//   --navigation-active-background: #{$blue-700};
 
-//   --toggle: #{$red-500};
-//   --toggle-background: #{$red-900};
-//   --toggle-hover-background: #{$red-800};
-//   --toggle-active: #{$red-900};
-//   --toggle-active-background: #{$red-500};
+//   --toggle: #{$blue-900};
+//   --toggle-background: #{$blue-500};
+//   --toggle-hover-background: #{$blue-400};
+//   --toggle-active: #{$blue-300};
+//   --toggle-active-background: #{$blue-700};
 
 //   --link: #{$blue-800};
-//   --link-hover: #{$blue-800};
+//   --link-hover: #{$blue-700};
 //   --link-active: #{$blue-800};
 
-//   --selection: #{$purple-200};
-//   --outline: #{$red-200};
+//   --selection: #{$green-500};
+//   --outline: #{$green-200};
 // }
+
+// .c-theme-tertiary {
+//   --color-mode: 'light';
+
+//   --brand: #{$green-500};
+
+//   --theme: #{$blue-900};
+//   --theme-text: #{$white};
+//   --theme-accent: #{$blue-600};
+//   --theme-card: #{$white};
+//   --theme-border: #{$blue-400};
+//   --theme-background: #{$white};
+
+//   --theme-secondary: #{$blue-900};
+//   --theme-secondary-text: #{$green-900};
+//   --theme-secondary-border: #{$green-800};
+//   --theme-secondary-background: #{$green-900};
+
+//   --theme-tertiary: #{$white};
+//   --theme-tertiary-text: #{$white};
+//   --theme-tertiary-border: #{$blue-300};
+//   --theme-tertiary-background: #{$red-500};
+
+//   --tint-one: #{$purple-800};
+//   --tint-two: #{$blue-300};
+//   --tint-three: #{$green-400};
+//   --tint-four: #{$purple-200};
+//   --tint-five: #{$red-400};
+//   --tint-six: #{$blue-700};
+
+//   --navigation-holder: #{$green-900};
+//   --navigation: #{$green-200};
+//   --navigation-hover: #{$green-300};
+//   --navigation-active: #{$green-200};
+//   --navigation-active-background: #{$green-800};
+
+//   --toggle: #{$green-900};
+//   --toggle-background: #{$green-500};
+//   --toggle-hover-background: #{$green-400};
+//   --toggle-active: #{$green-300};
+//   --toggle-active-background: #{$green-700};
+
+//   --link: #{$blue-800};
+//   --link-hover: #{$blue-700};
+//   --link-active: #{$blue-800};
+
+//   --selection: #{$green-500};
+//   --outline: #{$green-200};
+// }
+
+.c-theme-generic {
+  --color-mode: 'light';
+
+  --brand: #{$blue-400};
+
+  --theme: #{$green-900};
+  --theme-text: #{$white};
+  --theme-accent: #{$green-600};
+  --theme-card: #{$white};
+  --theme-border: #{$blue-400};
+  --theme-background: #{$white};
+
+  --theme-secondary: #{$green-900};
+  --theme-secondary-text: #{$green-900};
+  --theme-secondary-border: #{$green-800};
+  --theme-secondary-background: #{$green-900};
+
+  --theme-tertiary: #{$white};
+  --theme-tertiary-text: #{$white};
+  --theme-tertiary-border: #{$blue-300};
+  --theme-tertiary-background: #{$red-500};
+
+  --tint-one: #{$purple-800};
+  --tint-two: #{$blue-300};
+  --tint-three: #{$green-400};
+  --tint-four: #{$purple-200};
+  --tint-five: #{$red-400};
+  --tint-six: #{$blue-700};
+
+  --navigation-holder: #{$green-800};
+  --navigation: #{$green-300};
+  --navigation-hover: #{$green-400};
+  --navigation-active: #{$green-300};
+  --navigation-active-background: #{$green-900};
+
+  --toggle: #{$green-900};
+  --toggle-background: #{$green-500};
+  --toggle-hover-background: #{$green-400};
+  --toggle-active: #{$green-100};
+  --toggle-active-background: #{$green-700};
+
+  --link: #{$green-800};
+  --link-hover: #{$green-700};
+  --link-active: #{$green-800};
+
+  --selection: #{$green-500};
+  --outline: #{$green-200};
+}
 
 // Primary dark
 @include dark-mode() {

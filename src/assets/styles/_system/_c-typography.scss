@@ -4,9 +4,13 @@
 
 .c-page-intro {
   @include font-size($h1);
-  color: var(--theme-text);
+  color: var(--theme);
   font-weight: 600;
   font-family: $font-secondary;
+
+  .c-hero & {
+    color: var(--theme-text);
+  }
 
   em {
     font-style: italic;
@@ -54,9 +58,13 @@
 
 .c-intro {
   @include font-size($h2);
-  color: var(--theme-text);
+  color: var(--theme);
   font-weight: 600;
   font-family: $font-secondary;
+
+  .c-hero & {
+    color: var(--theme-text);
+  }
 
   em {
     font-style: italic;
@@ -78,7 +86,11 @@
 .c-subtitle {
   @include font-size($h3,1.5);
   font-weight: 400;
-  color: var(--theme-text);
+  color: var(--theme);
+
+  .c-hero & {
+    color: var(--theme-text);
+  }
 
   @include mq(large) {
     @include font-size($h2,1.5);
@@ -88,7 +100,11 @@
 .c-page-lead {
   @include font-size($h3,1.5);
   font-weight: 300;
-  color: var(--theme-text);
+  color: var(--theme);
+
+  .c-hero & {
+    color: var(--theme-text);
+  }
 
   strong {
     font-weight: 500;
@@ -106,7 +122,7 @@
 .c-lead {
   @include font-size($h4,1.5);
   font-weight: 300;
-  color: var(--theme-text);
+  color: var(--theme);
 
   strong {
     font-weight: 500;
