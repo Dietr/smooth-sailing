@@ -4,8 +4,8 @@
 // Reference and attribution: https://github.com/andybelldesign/hylia/blob/master/src/_includes/partials/global/service-worker.js
 
 const CACHE_KEYS = {
-  PRE_CACHE: `precache-10`,
-  RUNTIME: `runtime-10`
+  PRE_CACHE: `precache-11`,
+  RUNTIME: `runtime-11`
 };
 
 // URLS that we don’t want to end up in the cache
@@ -21,7 +21,8 @@ const PRE_CACHE_URLS = [
 // You might want to bypass a certain host
 const IGNORED_HOSTS = [
   'localhost',
-  'roaringandgentle.test'
+  'https://hardcore-meitner-bf68ac.netlify.app',
+  'smoothsailing.test'
 ];
 
 /**
