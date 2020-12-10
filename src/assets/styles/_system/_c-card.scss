@@ -85,13 +85,14 @@
 
 .c-card__cta {
   @include font-size($h6);
-  color: var(--link-hover);
+  font-weight: 500;
+  color: var(--link);
   opacity: 0;
   transition: opacity $transition;
 
   .c-card:hover &,
   .c-card:focus-within & {
-    color: var(--link-hover);
+    color: var(--link);
     opacity: 1;
   }
 }
