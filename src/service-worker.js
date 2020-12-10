@@ -4,8 +4,8 @@
 // Reference and attribution: https://github.com/andybelldesign/hylia/blob/master/src/_includes/partials/global/service-worker.js
 
 const CACHE_KEYS = {
-  PRE_CACHE: `precache-6`,
-  RUNTIME: `runtime-6`
+  PRE_CACHE: `precache-7`,
+  RUNTIME: `runtime-7`
 };
 
 // URLS that we don’t want to end up in the cache
