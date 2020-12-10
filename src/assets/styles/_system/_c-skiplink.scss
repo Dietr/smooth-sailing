@@ -11,9 +11,11 @@
 
 .c-skiplink {
   @include font-size($small,1);
+  font-weight: 500;
   padding: $unit-tiny/2 $unit-tiny $unit-tiny;
-  background-color: var(--theme-primary-background);
+  color: var(--theme-text);
   position: absolute;
+  z-index: 6;
   white-space: nowrap;
   top: -1000px;
   left: -1000px;
@@ -26,7 +28,7 @@
   &:visited,
   &:hover,
   &:focus {
-    color: var(--theme);
+    color: var(--theme-text);
   }
 
   &:focus {

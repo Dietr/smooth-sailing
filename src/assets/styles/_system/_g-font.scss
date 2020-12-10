@@ -5,28 +5,18 @@
 @font-face {
   font-family: "Soehne";
   font-weight: 300;
-  src: url("/assets/fonts/soehne-test-leicht.woff") format("woff");
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "Soehne";
-  font-weight: 400;
-  src: url("/assets/fonts/soehne-test-buch.woff") format("woff");
+  src: url("/assets/fonts/soehne-web-leicht.woff2") format("woff2"),
+       url("/assets/fonts/soehne-web-leicht.woff") format("woff"),
+       url("/assets/fonts/soehne-web-leicht.eot") format("eot");
   font-display: fallback;
 }
 
 @font-face {
   font-family: "Soehne";
   font-weight: 500;
-  src: url("/assets/fonts/soehne-test-kraftig.woff") format("woff");
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "Soehne";
-  font-weight: 600;
-  src: url("/assets/fonts/soehne-test-halbfett.woff") format("woff");
+  src: url("/assets/fonts/soehne-web-kraftig.woff2") format("woff2"),
+       url("/assets/fonts/soehne-web-kraftig.woff") format("woff"),
+       url("/assets/fonts/soehne-web-kraftig.eot") format("eot");
   font-display: fallback;
 }
 

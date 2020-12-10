@@ -6,7 +6,7 @@
 :root {
   --color-mode: 'light';
 
-  --brand: #{$blue-900};
+  --brand: #{$red-900};
 
   --theme: #{$blue-900};
   --theme-text: #{$blue-900};
@@ -32,7 +32,7 @@
   --tint-five: #{$red-400};
   --tint-six: #{$blue-700};
 
-  --navigation-holder: #{$red-900};
+  --navigation-holder: #{$red-800};
   --navigation: #{$red-900};
   --navigation-hover: #{$red-800};
   --navigation-active: #{$red-500};
@@ -52,108 +52,108 @@
   --outline: #{$red-200};
 }
 
-// .c-theme-secondary {
-//   --color-mode: 'light';
+.c-theme-secondary {
+  --color-mode: 'light';
 
-//   --brand: #{$red-400};
+  --brand: #{$red-400};
 
-//   --theme: #{$blue-900};
-//   --theme-text: #{$white};
-//   --theme-accent: #{$red-600};
-//   --theme-card: #{$white};
-//   --theme-border: #{$blue-400};
-//   --theme-background: #{$white};
+  --theme: #{$red-900};
+  --theme-text: #{$white};
+  --theme-accent: #{$red-600};
+  --theme-card: #{$white};
+  --theme-border: #{$blue-400};
+  --theme-background: #{$white};
 
-//   --theme-secondary: #{$blue-900};
-//   --theme-secondary-text: #{$green-900};
-//   --theme-secondary-border: #{$blue-700};
-//   --theme-secondary-background: #{$blue-900};
+  --theme-secondary: #{$blue-900};
+  --theme-secondary-text: #{$green-900};
+  --theme-secondary-border: #{$red-400};
+  --theme-secondary-background: #{$blue-900};
 
-//   --theme-tertiary: #{$white};
-//   --theme-tertiary-text: #{$white};
-//   --theme-tertiary-border: #{$blue-300};
-//   --theme-tertiary-background: #{$red-500};
+  --theme-tertiary: #{$white};
+  --theme-tertiary-text: #{$white};
+  --theme-tertiary-border: #{$blue-300};
+  --theme-tertiary-background: #{$red-500};
 
-//   --tint-one: #{$purple-800};
-//   --tint-two: #{$blue-300};
-//   --tint-three: #{$green-400};
-//   --tint-four: #{$purple-200};
-//   --tint-five: #{$red-400};
-//   --tint-six: #{$blue-700};
+  --tint-one: #{$purple-800};
+  --tint-two: #{$blue-300};
+  --tint-three: #{$green-400};
+  --tint-four: #{$purple-200};
+  --tint-five: #{$red-400};
+  --tint-six: #{$blue-700};
 
-//   --navigation-holder: #{$blue-900};
-//   --navigation: #{$blue-400};
-//   --navigation-hover: #{$blue-500};
-//   --navigation-active: #{$blue-300};
-//   --navigation-active-background: #{$blue-700};
+  --navigation-holder: #{$blue-900};
+  --navigation: #{$red-400};
+  --navigation-hover: #{$red-500};
+  --navigation-active: #{$red-900};
+  --navigation-active-background: #{$red-500};
 
-//   --toggle: #{$blue-900};
-//   --toggle-background: #{$blue-500};
-//   --toggle-hover-background: #{$blue-400};
-//   --toggle-active: #{$blue-300};
-//   --toggle-active-background: #{$blue-700};
+  --toggle: #{$red-900};
+  --toggle-background: #{$red-400};
+  --toggle-hover-background: #{$red-500};
+  --toggle-active: #{$red-900};
+  --toggle-active-background: #{$red-500};
 
-//   --link: #{$blue-800};
-//   --link-hover: #{$blue-700};
-//   --link-active: #{$blue-800};
+  --link: #{$red-800};
+  --link-hover: #{$red-700};
+  --link-active: #{$red-800};
 
-//   --selection: #{$green-500};
-//   --outline: #{$green-200};
-// }
+  --selection: #{$red-400};
+  --outline: #{$red-400};
+}
 
-// .c-theme-tertiary {
-//   --color-mode: 'light';
+.c-theme-tertiary {
+  --color-mode: 'light';
 
-//   --brand: #{$green-500};
+  --brand: #{$blue-700};
 
-//   --theme: #{$blue-900};
-//   --theme-text: #{$white};
-//   --theme-accent: #{$blue-600};
-//   --theme-card: #{$white};
-//   --theme-border: #{$blue-400};
-//   --theme-background: #{$white};
+  --theme: #{$blue-800};
+  --theme-text: #{$blue-800};
+  --theme-accent: #{$blue-500};
+  --theme-card: #{$white};
+  --theme-border: #{$blue-500};
+  --theme-background: #{$white};
 
-//   --theme-secondary: #{$blue-900};
-//   --theme-secondary-text: #{$green-900};
-//   --theme-secondary-border: #{$green-800};
-//   --theme-secondary-background: #{$green-900};
+  --theme-secondary: #{$blue-900};
+  --theme-secondary-text: #{$green-900};
+  --theme-secondary-border: #{$blue-100};
+  --theme-secondary-background: #{$blue-300};
 
-//   --theme-tertiary: #{$white};
-//   --theme-tertiary-text: #{$white};
-//   --theme-tertiary-border: #{$blue-300};
-//   --theme-tertiary-background: #{$red-500};
+  --theme-tertiary: #{$white};
+  --theme-tertiary-text: #{$white};
+  --theme-tertiary-border: #{$blue-300};
+  --theme-tertiary-background: #{$red-500};
 
-//   --tint-one: #{$purple-800};
-//   --tint-two: #{$blue-300};
-//   --tint-three: #{$green-400};
-//   --tint-four: #{$purple-200};
-//   --tint-five: #{$red-400};
-//   --tint-six: #{$blue-700};
+  --tint-one: #{$purple-800};
+  --tint-two: #{$blue-300};
+  --tint-three: #{$green-400};
+  --tint-four: #{$purple-200};
+  --tint-five: #{$red-400};
+  --tint-six: #{$blue-700};
 
-//   --navigation-holder: #{$green-900};
-//   --navigation: #{$green-200};
-//   --navigation-hover: #{$green-300};
-//   --navigation-active: #{$green-200};
-//   --navigation-active-background: #{$green-800};
+  --navigation-holder: #{$blue-900};
+  --navigation: #{$blue-700};
+  --navigation-hover: #{$blue-600};
+  --navigation-active: #{$blue-200};
+  --navigation-active-background: #{$blue-800};
 
-//   --toggle: #{$green-900};
-//   --toggle-background: #{$green-500};
-//   --toggle-hover-background: #{$green-400};
-//   --toggle-active: #{$green-300};
-//   --toggle-active-background: #{$green-700};
+  --toggle: #{$blue-100};
+  --toggle-background: #{$blue-700};
+  --toggle-hover-background: #{$blue-600};
+  --toggle-active: #{$blue-900};
+  --toggle-active-background: #{$blue-500};
 
-//   --link: #{$blue-800};
-//   --link-hover: #{$blue-700};
-//   --link-active: #{$blue-800};
+  --link: #{$blue-600};
+  --link-hover: #{$blue-700};
+  --link-active: #{$blue-800};
 
-//   --selection: #{$green-500};
-//   --outline: #{$green-200};
-// }
+  --selection: #{$blue-500};
+  --outline: #{$blue-600};
+}
 
 .c-theme-generic {
   --color-mode: 'light';
 
-  --brand: #{$blue-400};
+  --brand: #{$green-400};
 
   --theme: #{$green-900};
   --theme-text: #{$white};
@@ -179,15 +179,15 @@
   --tint-five: #{$red-400};
   --tint-six: #{$blue-700};
 
-  --navigation-holder: #{$green-800};
+  --navigation-holder: #{$green-900};
   --navigation: #{$green-300};
   --navigation-hover: #{$green-400};
   --navigation-active: #{$green-300};
-  --navigation-active-background: #{$green-900};
+  --navigation-active-background: #{$green-800};
 
-  --toggle: #{$green-900};
-  --toggle-background: #{$green-500};
-  --toggle-hover-background: #{$green-400};
+  --toggle: #{$green-800};
+  --toggle-background: #{$green-400};
+  --toggle-hover-background: #{$green-300};
   --toggle-active: #{$green-100};
   --toggle-active-background: #{$green-700};
 

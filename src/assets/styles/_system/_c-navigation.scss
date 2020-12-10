@@ -10,7 +10,7 @@
   letter-spacing: .05rem;
   position: absolute;
   z-index: 6;
-  top: $unit-tiny*1.5;
+  top: $unit-small + $unit-tiny/2;
   right: 0;
   color: var(--toggle);
   background-color: var(--toggle-background);
@@ -115,6 +115,10 @@
 
   @include mq($until: navigation) {
     @include font-size($h1);
+    padding-bottom: $unit;
+    padding-top: $unit-tiny;
+    padding-left: $unit*2;
+    padding-right: $unit*2;
 
     .has-nav & {
       color: $white;
@@ -123,6 +127,10 @@
     .has-nav &:hover,
     .has-nav &:focus {
       color: $white;
+    }
+
+    .is-active & {
+      border-radius: $radius*4;
     }
   }
 

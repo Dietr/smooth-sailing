@@ -15,6 +15,18 @@
   }
 }
 
+.c-hero--alt {
+  padding-bottom: $unit-large * 1.5;
+
+  @include mq(medium) {
+    padding-bottom: $unit-large * 2;
+  }
+
+  @include mq(large) {
+    padding-bottom: $unit-large * 3;
+  }
+}
+
 .c-hero__content {
   position: relative;
 }

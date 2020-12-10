@@ -50,9 +50,28 @@
   @include mq(large) {
     @include font-size($xhuge,1.1);
   }
+}
 
-  @include mq(huge) {
-    @include font-size($xxhuge,1.1);
+.c-page-cta-alt {
+  @include font-size($h2);
+  color: var(--theme-text);
+  font-weight: 600;
+  font-family: $font-secondary;
+
+  em {
+    font-style: italic;
+  }
+
+  @include mq(small) {
+    @include font-size($large);
+  }
+
+  @include mq(medium) {
+    @include font-size($large);
+  }
+
+  @include mq(large) {
+    @include font-size($xhuge,1.1);
   }
 }
 

@@ -10,7 +10,7 @@
    ========================================================================== */
 
 .c-brand {
-  @include font-size($h4,1);
+  @include font-size($h4,.95);
   font-family: $font-secondary;
   font-weight: 600;
   letter-spacing: .05rem;
@@ -21,7 +21,11 @@
   margin-right: $unit-large;
 
   @include mq(medium) {
-    @include font-size($h3,1);
+    @include font-size($h3,.95);
+  }
+
+  @include mq(large) {
+    @include font-size(2.6rem,.95);
   }
 }
 
@@ -59,8 +63,13 @@
   }
 
   @include mq(medium) {
-    width: $unit * 2.5;
-    height: $unit * 2.5;
+    width: $unit * 2.2;
+    height: $unit * 2.2;
+  }
+
+  @include mq(large) {
+    width: $unit * 2.4;
+    height: $unit * 2.4;
   }
 }
 
@@ -75,7 +84,12 @@
   }
 
   @include mq(medium) {
-    width: $unit * 2.5;
-    height: $unit * 2.5;
+    width: $unit * 2.2;
+    height: $unit * 2.2;
+  }
+
+  @include mq(medium) {
+    width: $unit * 2.4;
+    height: $unit * 2.4;
   }
 }
