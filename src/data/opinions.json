@@ -5,28 +5,32 @@
       "date": "2020-12-10",
       "externalLink": "https://smoothsailor.medium.com/c8c9bb0ae408",
       "excerpt": "It has been 5 years already since I went my own way, head-first into design research. I was a bit scared, naturally, but I was also really eager to be my own boss. So I became a freelancer, first alone, then later with my wife in Mrs. & Mr.",
-      "image": "article-4"
+      "image": "article-4",
+      "imageAlt": "3 persons at the beach holding a shovel."
     },
     {
       "title": "Time for software design to grow up",
       "date": "2020-11-27",
       "externalLink": "https://uxdesign.cc/time-for-software-design-to-grow-up-86fc11c0efbb",
       "excerpt": "The value of software design is greater than having good looking interfaces and frictionless flows. Good design creates an impact on the long-term behaviour of people and therefore it impacts the world we live in.",
-      "image": "article-1"
+      "image": "article-1",
+      "imageAlt": "Person wearing a Nirvana t-shirt."
     },
     {
       "title": "A designer’s guide to talking with users",
       "date": "2020-05-13",
       "externalLink": "https://uxdesign.cc/a-designers-guide-to-talking-with-users-195f3bb380b8",
       "excerpt": "Qualitative research is the basis of a solid digital product that people can relate to. This is why I wrote a blog post or two (in Dutch) about how important it is to involve users in your design research.",
-      "image": "article-2"
+      "image": "article-2",
+      "imageAlt": "2 women discussing and making hand gestures."
     },
     {
       "title": "Never ask a designer to build a bridge",
       "date": "2020-05-07",
       "externalLink": "https://uxdesign.cc/never-ask-a-designer-to-build-a-bridge-3888c26351ba",
       "excerpt": "Have you ever worked on a project where something looks off and it’s easy to adjust, but your designer says no? If the designer would just make this simple change, but still no!",
-      "image": "article-3"
+      "image": "article-3",
+      "imageAlt": "Train track going into a tunnel."
     }
   ]
 }
